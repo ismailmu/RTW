@@ -1,0 +1,866 @@
+2013/06/26 16:39:17 - Kitchen - Logging is at level : Detailed logging
+2013/06/26 16:39:17 - Kitchen - Start of run.
+2013/06/26 16:39:18 - main_rtw - Start of job execution
+2013/06/26 16:39:18 - main_rtw - exec(0, 0, START.0)
+2013/06/26 16:39:18 - START - Starting job entry
+2013/06/26 16:39:18 - main_rtw - Starting entry [set variable main]
+2013/06/26 16:39:18 - main_rtw - exec(1, 0, set variable main.0)
+2013/06/26 16:39:18 - set variable main - Starting job entry
+2013/06/26 16:39:18 - set variable main - Opening transformation: [file:///C:/12023227/Workspace/RTW/pentaho/set_variable.ktr]
+2013/06/26 16:39:18 - set variable main - Loading transformation from XML file [file:///C:/12023227/Workspace/RTW/pentaho/set_variable.ktr]
+2013/06/26 16:39:18 - set variable main - Starting transformation...(file=${Internal.Job.Filename.Directory}/set_variable.ktr, name=set variable main, repinfo=null)
+2013/06/26 16:39:18 - set_variable - Transformation is pre-loaded.
+2013/06/26 16:39:18 - set_variable - Dispatching started for transformation [set_variable]
+2013/06/26 16:39:18 - set_variable - Nr of arguments detected:0 
+2013/06/26 16:39:18 - set_variable - This is not a replay transformation
+2013/06/26 16:39:18 - set_variable - I found 3 different steps to launch.
+2013/06/26 16:39:18 - set_variable - Allocating rowsets...
+2013/06/26 16:39:18 - set_variable -  Allocating rowsets for step 0 --> Get data from XML
+2013/06/26 16:39:18 - set_variable -   prevcopies = 1, nextcopies=1
+2013/06/26 16:39:18 - set_variable - Transformation allocated new rowset [Get data from XML.0 - Copy rows to result.0]
+2013/06/26 16:39:18 - set_variable -  Allocated 1 rowsets for step 0 --> Get data from XML  
+2013/06/26 16:39:18 - set_variable -  Allocating rowsets for step 1 --> Copy rows to result
+2013/06/26 16:39:18 - set_variable -  Allocated 1 rowsets for step 1 --> Copy rows to result  
+2013/06/26 16:39:18 - set_variable -  Allocating rowsets for step 2 --> Get Variables
+2013/06/26 16:39:18 - set_variable -   prevcopies = 1, nextcopies=1
+2013/06/26 16:39:18 - set_variable - Transformation allocated new rowset [Get Variables.0 - Get data from XML.0]
+2013/06/26 16:39:18 - set_variable -  Allocated 2 rowsets for step 2 --> Get Variables  
+2013/06/26 16:39:18 - set_variable - Allocating Steps & StepData...
+2013/06/26 16:39:18 - set_variable -  Transformation is about to allocate step [Get data from XML] of type [getXMLData]
+2013/06/26 16:39:18 - Get data from XML.0 - distribution activated
+2013/06/26 16:39:18 - Get data from XML.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:18 - Get data from XML.0 - Step info: nrinput=1 nroutput=1
+2013/06/26 16:39:18 - Get data from XML.0 - Got previous step from [Get data from XML] #0 --> Get Variables
+2013/06/26 16:39:18 - Get data from XML.0 - input rel is 1:1
+2013/06/26 16:39:18 - Get data from XML.0 - Found input rowset [Get Variables.0 - Get data from XML.0]
+2013/06/26 16:39:18 - Get data from XML.0 - output rel. is  1:1
+2013/06/26 16:39:18 - Get data from XML.0 - Found output rowset [Get data from XML.0 - Copy rows to result.0]
+2013/06/26 16:39:18 - Get data from XML.0 - Finished dispatching
+2013/06/26 16:39:18 - set_variable -  Transformation has allocated a new step: [Get data from XML].0
+2013/06/26 16:39:18 - set_variable -  Transformation is about to allocate step [Copy rows to result] of type [RowsToResult]
+2013/06/26 16:39:18 - Copy rows to result.0 - distribution activated
+2013/06/26 16:39:18 - Copy rows to result.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:18 - Copy rows to result.0 - Step info: nrinput=1 nroutput=0
+2013/06/26 16:39:18 - Copy rows to result.0 - Got previous step from [Copy rows to result] #0 --> Get data from XML
+2013/06/26 16:39:18 - Copy rows to result.0 - input rel is 1:1
+2013/06/26 16:39:18 - Copy rows to result.0 - Found input rowset [Get data from XML.0 - Copy rows to result.0]
+2013/06/26 16:39:18 - Copy rows to result.0 - Finished dispatching
+2013/06/26 16:39:18 - set_variable -  Transformation has allocated a new step: [Copy rows to result].0
+2013/06/26 16:39:18 - set_variable -  Transformation is about to allocate step [Get Variables] of type [GetVariable]
+2013/06/26 16:39:18 - Get Variables.0 - distribution activated
+2013/06/26 16:39:18 - Get Variables.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:18 - Get Variables.0 - Step info: nrinput=0 nroutput=1
+2013/06/26 16:39:18 - Get Variables.0 - output rel. is  1:1
+2013/06/26 16:39:18 - Get Variables.0 - Found output rowset [Get Variables.0 - Get data from XML.0]
+2013/06/26 16:39:18 - Get Variables.0 - Finished dispatching
+2013/06/26 16:39:18 - set_variable -  Transformation has allocated a new step: [Get Variables].0
+2013/06/26 16:39:18 - set_variable - This transformation can be replayed with replay date: 2013/06/26 16:39:18
+2013/06/26 16:39:18 - set_variable - Initialising 3 steps...
+2013/06/26 16:39:18 - Get Variables.0 - Running on slave server #0/1.
+2013/06/26 16:39:18 - Copy rows to result.0 - Running on slave server #0/1.
+2013/06/26 16:39:18 - Get data from XML.0 - Running on slave server #0/1.
+2013/06/26 16:39:18 - Get data from XML.0 - Looping Xpath is : /SETTINGS_LIST/SETTING
+2013/06/26 16:39:18 - set_variable - Step [Get data from XML.0] initialized flawlessly.
+2013/06/26 16:39:18 - set_variable - Step [Copy rows to result.0] initialized flawlessly.
+2013/06/26 16:39:18 - set_variable - Step [Get Variables.0] initialized flawlessly.
+2013/06/26 16:39:18 - Get data from XML.0 - Starting to run...
+2013/06/26 16:39:18 - Get Variables.0 - Starting to run...
+2013/06/26 16:39:18 - set_variable - Transformation has allocated 3 threads and 2 rowsets.
+2013/06/26 16:39:18 - Copy rows to result.0 - Starting to run...
+2013/06/26 16:39:18 - Get Variables.0 - field [XML_PATH] has value [C:\12023227\Workspace\RTW\files\rtw_setting.xml]
+2013/06/26 16:39:18 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/06/26 16:39:18 - Get data from XML.0 - Opening file: file:///C:/12023227/Workspace/RTW/files/rtw_setting.xml
+2013/06/26 16:39:18 - Get data from XML.0 - Finished opening file file:///C:/12023227/Workspace/RTW/files/rtw_setting.xml
+2013/06/26 16:39:18 - Get data from XML.0 - We found [1] occurrences for file [rtw_setting.xml]
+2013/06/26 16:39:18 - Get data from XML.0 - Finished processing files.
+2013/06/26 16:39:18 - Get data from XML.0 - Finished processing (I=1, O=0, R=0, W=1, U=0, E=0)
+2013/06/26 16:39:18 - Copy rows to result.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/06/26 16:39:18 - main_rtw - Starting entry [Job wisma]
+2013/06/26 16:39:18 - main_rtw - exec(2, 0, Job wisma.0)
+2013/06/26 16:39:18 - Job wisma - Starting job entry
+2013/06/26 16:39:18 - Job wisma - Loading job from XML file : [file:///C:/12023227/Workspace/RTW/pentaho/job_wisma.kjb]
+2013/06/26 16:39:18 - job_wisma - exec(3, 0, START.0)
+2013/06/26 16:39:18 - START - Starting job entry
+2013/06/26 16:39:18 - job_wisma - Starting entry [set variable main]
+2013/06/26 16:39:18 - job_wisma - exec(4, 0, set variable main.0)
+2013/06/26 16:39:18 - set variable main - Starting job entry
+2013/06/26 16:39:18 - set variable main - Opening transformation: [file:///C:/12023227/Workspace/RTW/pentaho/set_variable_main.ktr]
+2013/06/26 16:39:18 - set variable main - Loading transformation from XML file [file:///C:/12023227/Workspace/RTW/pentaho/set_variable_main.ktr]
+2013/06/26 16:39:18 - set variable main - Starting transformation...(file=${Internal.Job.Filename.Directory}/set_variable_main.ktr, name=set variable main, repinfo=null)
+2013/06/26 16:39:18 - set_variable_main - Transformation is pre-loaded.
+2013/06/26 16:39:18 - set_variable_main - Dispatching started for transformation [set_variable_main]
+2013/06/26 16:39:18 - set_variable_main - Nr of arguments detected:0 
+2013/06/26 16:39:18 - set_variable_main - This is not a replay transformation
+2013/06/26 16:39:18 - set_variable_main - I found 2 different steps to launch.
+2013/06/26 16:39:18 - set_variable_main - Allocating rowsets...
+2013/06/26 16:39:18 - set_variable_main -  Allocating rowsets for step 0 --> Get rows from result
+2013/06/26 16:39:18 - set_variable_main -   prevcopies = 1, nextcopies=1
+2013/06/26 16:39:18 - set_variable_main - Transformation allocated new rowset [Get rows from result.0 - Set Variables.0]
+2013/06/26 16:39:18 - set_variable_main -  Allocated 1 rowsets for step 0 --> Get rows from result  
+2013/06/26 16:39:18 - set_variable_main -  Allocating rowsets for step 1 --> Set Variables
+2013/06/26 16:39:18 - set_variable_main -  Allocated 1 rowsets for step 1 --> Set Variables  
+2013/06/26 16:39:18 - set_variable_main - Allocating Steps & StepData...
+2013/06/26 16:39:18 - set_variable_main -  Transformation is about to allocate step [Get rows from result] of type [RowsFromResult]
+2013/06/26 16:39:18 - Get rows from result.0 - distribution activated
+2013/06/26 16:39:18 - Get rows from result.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:18 - Get rows from result.0 - Step info: nrinput=0 nroutput=1
+2013/06/26 16:39:18 - Get rows from result.0 - output rel. is  1:1
+2013/06/26 16:39:18 - Get rows from result.0 - Found output rowset [Get rows from result.0 - Set Variables.0]
+2013/06/26 16:39:18 - Get rows from result.0 - Finished dispatching
+2013/06/26 16:39:18 - set_variable_main -  Transformation has allocated a new step: [Get rows from result].0
+2013/06/26 16:39:18 - set_variable_main -  Transformation is about to allocate step [Set Variables] of type [SetVariable]
+2013/06/26 16:39:18 - Set Variables.0 - distribution activated
+2013/06/26 16:39:18 - Set Variables.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:18 - Set Variables.0 - Step info: nrinput=1 nroutput=0
+2013/06/26 16:39:18 - Set Variables.0 - Got previous step from [Set Variables] #0 --> Get rows from result
+2013/06/26 16:39:18 - Set Variables.0 - input rel is 1:1
+2013/06/26 16:39:18 - Set Variables.0 - Found input rowset [Get rows from result.0 - Set Variables.0]
+2013/06/26 16:39:18 - Set Variables.0 - Finished dispatching
+2013/06/26 16:39:18 - set_variable_main -  Transformation has allocated a new step: [Set Variables].0
+2013/06/26 16:39:18 - set_variable_main - This transformation can be replayed with replay date: 2013/06/26 16:39:18
+2013/06/26 16:39:18 - set_variable_main - Initialising 2 steps...
+2013/06/26 16:39:18 - Get rows from result.0 - Running on slave server #0/1.
+2013/06/26 16:39:18 - Set Variables.0 - Running on slave server #0/1.
+2013/06/26 16:39:18 - set_variable_main - Step [Get rows from result.0] initialized flawlessly.
+2013/06/26 16:39:18 - set_variable_main - Step [Set Variables.0] initialized flawlessly.
+2013/06/26 16:39:18 - set_variable_main - Transformation has allocated 2 threads and 1 rowsets.
+2013/06/26 16:39:18 - Get rows from result.0 - Starting to run...
+2013/06/26 16:39:18 - Set Variables.0 - Starting to run...
+2013/06/26 16:39:18 - Get rows from result.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/06/26 16:39:18 - Set Variables.0 - Setting environment variables...
+2013/06/26 16:39:18 - Set Variables.0 - Set variable OUTPUT_TYPE to value [CSV]
+2013/06/26 16:39:18 - Set Variables.0 - Set variable SINGLE_OUTPUT to value [Y]
+2013/06/26 16:39:18 - Set Variables.0 - Set variable PATH_OUTPUT to value [C:\12023227\Workspace\RTW\output]
+2013/06/26 16:39:18 - Set Variables.0 - Set variable FILE_NAME_OUTPUT to value [20130626_test]
+2013/06/26 16:39:18 - Set Variables.0 - Set variable DELIMITER to value [~]
+2013/06/26 16:39:18 - Set Variables.0 - Finished after 1 rows.
+2013/06/26 16:39:18 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/06/26 16:39:18 - job_wisma - Starting entry [Job wisma 2]
+2013/06/26 16:39:18 - job_wisma - exec(5, 0, Job wisma 2.0)
+2013/06/26 16:39:18 - Job wisma 2 - Starting job entry
+2013/06/26 16:39:18 - Job wisma 2 - Loading job from XML file : [file:///C:/12023227/Workspace/RTW/pentaho/job_wisma_2.kjb]
+2013/06/26 16:39:18 - job_wisma_2 - exec(6, 0, START.0)
+2013/06/26 16:39:18 - START - Starting job entry
+2013/06/26 16:39:18 - job_wisma_2 - Starting entry [set wisma variable]
+2013/06/26 16:39:18 - job_wisma_2 - exec(7, 0, set wisma variable.0)
+2013/06/26 16:39:18 - set wisma variable - Starting job entry
+2013/06/26 16:39:18 - set wisma variable - Opening transformation: [C:\12023227\Workspace BI\RTW_Pentaho\set_wisma_variable.ktr]
+2013/06/26 16:39:18 - set wisma variable - Loading transformation from XML file [C:\12023227\Workspace BI\RTW_Pentaho\set_wisma_variable.ktr]
+2013/06/26 16:39:18 - set wisma variable - Starting transformation...(file=C:\12023227\Workspace BI\RTW_Pentaho\set_wisma_variable.ktr, name=set wisma variable, repinfo=null)
+2013/06/26 16:39:18 - set wisma variable - Transformation is pre-loaded.
+2013/06/26 16:39:18 - set wisma variable - Dispatching started for transformation [set_wisma_variable]
+2013/06/26 16:39:18 - set wisma variable - Nr of arguments detected:0 
+2013/06/26 16:39:18 - set wisma variable - This is not a replay transformation
+2013/06/26 16:39:18 - set wisma variable - I found 3 different steps to launch.
+2013/06/26 16:39:18 - set wisma variable - Allocating rowsets...
+2013/06/26 16:39:18 - set wisma variable -  Allocating rowsets for step 0 --> Get data from XML
+2013/06/26 16:39:18 - set wisma variable -   prevcopies = 1, nextcopies=1
+2013/06/26 16:39:18 - set wisma variable - Transformation allocated new rowset [Get data from XML.0 - Copy rows to result.0]
+2013/06/26 16:39:18 - set wisma variable -  Allocated 1 rowsets for step 0 --> Get data from XML  
+2013/06/26 16:39:18 - set wisma variable -  Allocating rowsets for step 1 --> Copy rows to result
+2013/06/26 16:39:18 - set wisma variable -  Allocated 1 rowsets for step 1 --> Copy rows to result  
+2013/06/26 16:39:18 - set wisma variable -  Allocating rowsets for step 2 --> Get Variables
+2013/06/26 16:39:18 - set wisma variable -   prevcopies = 1, nextcopies=1
+2013/06/26 16:39:18 - set wisma variable - Transformation allocated new rowset [Get Variables.0 - Get data from XML.0]
+2013/06/26 16:39:18 - set wisma variable -  Allocated 2 rowsets for step 2 --> Get Variables  
+2013/06/26 16:39:18 - set wisma variable - Allocating Steps & StepData...
+2013/06/26 16:39:18 - set wisma variable -  Transformation is about to allocate step [Get data from XML] of type [getXMLData]
+2013/06/26 16:39:18 - Get data from XML.0 - distribution activated
+2013/06/26 16:39:18 - Get data from XML.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:18 - Get data from XML.0 - Step info: nrinput=1 nroutput=1
+2013/06/26 16:39:18 - Get data from XML.0 - Got previous step from [Get data from XML] #0 --> Get Variables
+2013/06/26 16:39:18 - Get data from XML.0 - input rel is 1:1
+2013/06/26 16:39:18 - Get data from XML.0 - Found input rowset [Get Variables.0 - Get data from XML.0]
+2013/06/26 16:39:18 - Get data from XML.0 - output rel. is  1:1
+2013/06/26 16:39:18 - Get data from XML.0 - Found output rowset [Get data from XML.0 - Copy rows to result.0]
+2013/06/26 16:39:18 - Get data from XML.0 - Finished dispatching
+2013/06/26 16:39:18 - set wisma variable -  Transformation has allocated a new step: [Get data from XML].0
+2013/06/26 16:39:18 - set wisma variable -  Transformation is about to allocate step [Copy rows to result] of type [RowsToResult]
+2013/06/26 16:39:18 - Copy rows to result.0 - distribution activated
+2013/06/26 16:39:18 - Copy rows to result.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:18 - Copy rows to result.0 - Step info: nrinput=1 nroutput=0
+2013/06/26 16:39:18 - Copy rows to result.0 - Got previous step from [Copy rows to result] #0 --> Get data from XML
+2013/06/26 16:39:18 - Copy rows to result.0 - input rel is 1:1
+2013/06/26 16:39:18 - Copy rows to result.0 - Found input rowset [Get data from XML.0 - Copy rows to result.0]
+2013/06/26 16:39:18 - Copy rows to result.0 - Finished dispatching
+2013/06/26 16:39:18 - set wisma variable -  Transformation has allocated a new step: [Copy rows to result].0
+2013/06/26 16:39:18 - set wisma variable -  Transformation is about to allocate step [Get Variables] of type [GetVariable]
+2013/06/26 16:39:18 - Get Variables.0 - distribution activated
+2013/06/26 16:39:18 - Get Variables.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:18 - Get Variables.0 - Step info: nrinput=0 nroutput=1
+2013/06/26 16:39:18 - Get Variables.0 - output rel. is  1:1
+2013/06/26 16:39:18 - Get Variables.0 - Found output rowset [Get Variables.0 - Get data from XML.0]
+2013/06/26 16:39:18 - Get Variables.0 - Finished dispatching
+2013/06/26 16:39:18 - set wisma variable -  Transformation has allocated a new step: [Get Variables].0
+2013/06/26 16:39:18 - set wisma variable - This transformation can be replayed with replay date: 2013/06/26 16:39:18
+2013/06/26 16:39:18 - set wisma variable - Initialising 3 steps...
+2013/06/26 16:39:18 - Get data from XML.0 - Running on slave server #0/1.
+2013/06/26 16:39:18 - Copy rows to result.0 - Running on slave server #0/1.
+2013/06/26 16:39:18 - Get Variables.0 - Running on slave server #0/1.
+2013/06/26 16:39:18 - Get data from XML.0 - Looping Xpath is : /SETTINGS_LIST/WISMA
+2013/06/26 16:39:18 - set wisma variable - Step [Get data from XML.0] initialized flawlessly.
+2013/06/26 16:39:18 - set wisma variable - Step [Copy rows to result.0] initialized flawlessly.
+2013/06/26 16:39:18 - set wisma variable - Step [Get Variables.0] initialized flawlessly.
+2013/06/26 16:39:18 - set wisma variable - Transformation has allocated 3 threads and 2 rowsets.
+2013/06/26 16:39:18 - Get data from XML.0 - Starting to run...
+2013/06/26 16:39:18 - Get data from XML.0 - Opening file: file:///C:/12023227/Workspace/RTW/files/rtw_setting.xml
+2013/06/26 16:39:18 - Get Variables.0 - Starting to run...
+2013/06/26 16:39:18 - Get Variables.0 - field [XML_PATH] has value [C:\12023227\Workspace\RTW\files\rtw_setting.xml]
+2013/06/26 16:39:18 - Get Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/06/26 16:39:18 - Copy rows to result.0 - Starting to run...
+2013/06/26 16:39:18 - Get data from XML.0 - Finished opening file file:///C:/12023227/Workspace/RTW/files/rtw_setting.xml
+2013/06/26 16:39:18 - Get data from XML.0 - We found [3] occurrences for file [rtw_setting.xml]
+2013/06/26 16:39:18 - Get data from XML.0 - Finished processing files.
+2013/06/26 16:39:18 - Get data from XML.0 - Finished processing (I=3, O=0, R=0, W=3, U=0, E=0)
+2013/06/26 16:39:18 - Copy rows to result.0 - Finished processing (I=0, O=0, R=3, W=3, U=0, E=0)
+2013/06/26 16:39:18 - job_wisma_2 - Starting entry [Job wisma looping]
+2013/06/26 16:39:18 - job_wisma_2 - exec(8, 0, Job wisma looping.0)
+2013/06/26 16:39:18 - Job wisma looping - Starting job entry
+2013/06/26 16:39:18 - Job wisma looping - Loading job from XML file : [C:\12023227\Workspace BI\RTW_Pentaho\job_wisma_looping.kjb]
+2013/06/26 16:39:18 - Job wisma looping - exec(9, 0, START.0)
+2013/06/26 16:39:18 - START - Starting job entry
+2013/06/26 16:39:18 - Job wisma looping - Starting entry [get wisma variable]
+2013/06/26 16:39:18 - Job wisma looping - exec(10, 0, get wisma variable.0)
+2013/06/26 16:39:18 - get wisma variable - Starting job entry
+2013/06/26 16:39:18 - get wisma variable - Opening transformation: [file:///C:/12023227/Workspace BI/RTW_Pentaho/get_wisma_variable.ktr]
+2013/06/26 16:39:18 - get wisma variable - Loading transformation from XML file [file:///C:/12023227/Workspace BI/RTW_Pentaho/get_wisma_variable.ktr]
+2013/06/26 16:39:18 - get wisma variable - Starting transformation...(file=${Internal.Job.Filename.Directory}/get_wisma_variable.ktr, name=get wisma variable, repinfo=null)
+2013/06/26 16:39:18 - get_wisma_variable - Transformation is pre-loaded.
+2013/06/26 16:39:18 - get_wisma_variable - Dispatching started for transformation [get_wisma_variable]
+2013/06/26 16:39:18 - get_wisma_variable - Nr of arguments detected:0 
+2013/06/26 16:39:18 - get_wisma_variable - This is not a replay transformation
+2013/06/26 16:39:18 - get_wisma_variable - I found 2 different steps to launch.
+2013/06/26 16:39:18 - get_wisma_variable - Allocating rowsets...
+2013/06/26 16:39:18 - get_wisma_variable -  Allocating rowsets for step 0 --> Get rows from result
+2013/06/26 16:39:18 - get_wisma_variable -   prevcopies = 1, nextcopies=1
+2013/06/26 16:39:18 - get_wisma_variable - Transformation allocated new rowset [Get rows from result.0 - Set Variables.0]
+2013/06/26 16:39:18 - get_wisma_variable -  Allocated 1 rowsets for step 0 --> Get rows from result  
+2013/06/26 16:39:18 - get_wisma_variable -  Allocating rowsets for step 1 --> Set Variables
+2013/06/26 16:39:18 - get_wisma_variable -  Allocated 1 rowsets for step 1 --> Set Variables  
+2013/06/26 16:39:18 - get_wisma_variable - Allocating Steps & StepData...
+2013/06/26 16:39:18 - get_wisma_variable -  Transformation is about to allocate step [Get rows from result] of type [RowsFromResult]
+2013/06/26 16:39:18 - Get rows from result.0 - distribution activated
+2013/06/26 16:39:18 - Get rows from result.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:18 - Get rows from result.0 - Step info: nrinput=0 nroutput=1
+2013/06/26 16:39:18 - Get rows from result.0 - output rel. is  1:1
+2013/06/26 16:39:18 - Get rows from result.0 - Found output rowset [Get rows from result.0 - Set Variables.0]
+2013/06/26 16:39:18 - Get rows from result.0 - Finished dispatching
+2013/06/26 16:39:18 - get_wisma_variable -  Transformation has allocated a new step: [Get rows from result].0
+2013/06/26 16:39:18 - get_wisma_variable -  Transformation is about to allocate step [Set Variables] of type [SetVariable]
+2013/06/26 16:39:18 - Set Variables.0 - distribution activated
+2013/06/26 16:39:18 - Set Variables.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:18 - Set Variables.0 - Step info: nrinput=1 nroutput=0
+2013/06/26 16:39:18 - Set Variables.0 - Got previous step from [Set Variables] #0 --> Get rows from result
+2013/06/26 16:39:18 - Set Variables.0 - input rel is 1:1
+2013/06/26 16:39:18 - Set Variables.0 - Found input rowset [Get rows from result.0 - Set Variables.0]
+2013/06/26 16:39:18 - Set Variables.0 - Finished dispatching
+2013/06/26 16:39:18 - get_wisma_variable -  Transformation has allocated a new step: [Set Variables].0
+2013/06/26 16:39:18 - get_wisma_variable - This transformation can be replayed with replay date: 2013/06/26 16:39:18
+2013/06/26 16:39:18 - get_wisma_variable - Initialising 2 steps...
+2013/06/26 16:39:18 - Get rows from result.0 - Running on slave server #0/1.
+2013/06/26 16:39:18 - Set Variables.0 - Running on slave server #0/1.
+2013/06/26 16:39:18 - get_wisma_variable - Step [Get rows from result.0] initialized flawlessly.
+2013/06/26 16:39:18 - get_wisma_variable - Step [Set Variables.0] initialized flawlessly.
+2013/06/26 16:39:18 - get_wisma_variable - Transformation has allocated 2 threads and 1 rowsets.
+2013/06/26 16:39:18 - Set Variables.0 - Starting to run...
+2013/06/26 16:39:18 - Get rows from result.0 - Starting to run...
+2013/06/26 16:39:18 - Get rows from result.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/06/26 16:39:18 - Set Variables.0 - Setting environment variables...
+2013/06/26 16:39:18 - Set Variables.0 - Set variable SCHEMA_NAME to value [W0001_20130430]
+2013/06/26 16:39:18 - Set Variables.0 - Set variable QUERY to value [Select 
+Left(b.NoAppID,5) as WismaCode,
+b.NoAppid as H_NoAppid, d.account_state_Id as H_account_state_id
+, a1.Due_date as H_LastDueDate_LoanTrxn
+, a1.Action_Date as H_LastPaymentDate
+,e.action_date as H_LastDueDate
+,f.action_date as H_NextDueDate
+,(g.orig_principal+g.orig_interest)-(g.principal_paid+g.interest_paid) as H_Tunggakan
+,case when f.action_date < current_date and f.payment_status='0'  and a1.installment_id=0 then 'BAD_DISBURSED'
+	when f.action_date < current_date and f.payment_status='0' then 'BAD' 	
+	else 'GOOD' end as H_Rank 
+,wb.NoAppid as W_NoAppid, wd.account_state_Id as W_account_state_id
+, wa1.Due_date as W_LastDueDate_LoanTrxn
+, wa1.Action_Date as W_LastPaymentDate
+,we.action_date as W_LastDueDate
+,wf.action_date as W_NextDueDate
+,(wg.orig_principal+wg.orig_interest)-(wg.principal_paid+wg.interest_paid) as W_Tunggakan
+,case when wf.action_date < current_date and wf.payment_status='0'  and wa1.installment_id=0 then 'BAD_DISBURSED'
+	when wf.action_date < current_date and wf.payment_status='0' then 'BAD' 	
+	else 'GOOD' end as W_Rank 
+-- ,a1.installment_id
+
+from ((prospera.account_trxn a1  left outer join prospera.account_trxn a2 on a1.account_id=a2.account_id 
+									and a1.account_trxn_id<a2.account_trxn_id)
+	inner join prospera.loan_account b on a1.account_id=b.account_id
+	inner join prospera.account d on b.account_id=d.account_id
+	left join prospera.loan_schedule e on e.account_id=a1.account_id and e.installment_id=a1.installment_id
+	left outer join prospera.loan_summary g on g.account_id=a1.account_id
+	left outer join prospera.loan_schedule f on f.account_id=a1.account_id and f.installment_id=a1.installment_id+1)
+	inner join 
+	((W0001_20130430.account_trxn wa1  left outer join W0001_20130430.account_trxn wa2 on wa1.account_id=wa2.account_id 
+									and wa1.account_trxn_id<wa2.account_trxn_id)
+	inner join W0001_20130430.loan_account wb on wa1.account_id=wb.account_id
+	inner join W0001_20130430.account wd on wb.account_id=wd.account_id
+	left join W0001_20130430.loan_schedule we on we.account_id=wa1.account_id and we.installment_id=wa1.installment_id
+	left outer join W0001_20130430.loan_summary wg on wg.account_id=wa1.account_id
+	left outer join W0001_20130430.loan_schedule wf on wf.account_id=wa1.account_id and wf.installment_id=wa1.installment_id+1)
+on b.NoAppid=wb.NoAppid	
+Where a2.account_trxn_id is   null
+	and wa2.account_trxn_id is null
+and b.NoAppid in (
+'W00140000112','W00140000312','W00140000712','W00140000812','W00140016712','W00140028012','W00140028212','W00140041212','W00140041712','w00140046712','w00140046812','W00140047412','W00140047612','w00140047812','W00140052112','W00140052312','W00140052512','W00140052612','W00140053711','W00140056213','W00140060912','W00140061312','W00140061412','W00140064113','W00140068912','W00140069611','W00140070911','W00140074012','W00140074212','W00140094812','W00140095112','W00140097311','W00140097411','W00140097511','W00140097611','W00140097711','W00140097811','W00140097911','W00140098011','W00140098111','W00140098211','W00140098311','W00140098411','W00140098511','W00140098611','W00140098711','W00140098811','W00140098911','W00140099011','W00140099111','W00140099311','W00140099411','W00140099511','W00140099611','W00140108711','W00140108811','W00140108911','W00140109011','W00140109111','W00140109211','W00140109311','W00140109511','W00140109611','W00140109711','W00140109811','W00140109911','W00140110011','W00140110111','W00140110211','W00140110311','W00140110411','W00140110511','W00140110611','W00140110711','W00140110811','W00140110911','W00140111011','W00140111111','W00140124811','W00140131411','W00140132811','W00140133211','W00140135011','W00140135311','W00140135711','W00140136211','W00140136511','W00140153611','W00140154211','W02530010611','W02530010711','W02530010811','W02530010911','W02530011011','W02530011111','W02530011211','W02530011311','W02530011411','W02530011511','W02530011611','W02530011711','W02530011811','W02530011911','W02530012011','W02530015111','W02530015211','W02530015311','W02530015411','W02530015511','W02530015611','W02530015711','W02530015811','W02530015911','W02530016011','W02530016111','W02530016311','W02530016411','W02530016611','W02530016711','W02530016811','W02530016911','W02530017011','W02530017111','W02530017211','W02530017311','W02530017411','W02530017511','W02530017611','W02530017811','W02530017911','W02530018011','W02530018111','W02530018311','W02530018411','W02530018511','W02530018611','W02530018711','W02530018911','W02530019011','W02530019111','W02530019211','W02530019311','W02530019411','W02530019511','W02530021211','W02530021411','W02530021611','W02530021711','W02530021911','W02530022011','W02530022111','W02530022211','W02530022311','W02530022411','W02530022511','W02530022611','W02530023511','W02530023611','W02530023711','W02530023811','W02530023911','W02530024011','W02530024111','W02530024211','W02530024311','W02530024411','W02530024511','W02530024611','W02530024711','W02530024811','W02530024911','W02530025011','W02530025111','W02530025211','W02530025311','W02530025411','W02530025511','W02530025611','W02530025711','W02530025811','W02530025911','W02530026011','W02530026111','W02530026211','W02530026311','W02530026411','W02530026511','W02530026611','W02530026711','W02530026811','W02530026911','W02530027011','W02530027111','W02530027211','W02530027311','W02530027411','W02530027511','W02530027611','W02530027711','W02530027811','W02530027911','W02530028011','W02530028111','W02530028211','W02530028311','W02530028411','W02530029011','W02530029111','W02530029311','W02530029411','W02530029511','W02530029611','W02530029711','W02530029811','W02530029911','W02530030011','W02530030111','W02530030211','W02530030311','W02530030411','W02530030911','W02530031411','W02530032011','W02530032111','W02530032211','W02530032311','W02530032411','W02530032511','W02530032611','W02530032711','W02530032811','W02530032911','W02530033011','W02530033111','W02530033211','W02530033311','W02530033411','W02530033511','W02530033611','W02530033711','W02530033811','W02530033911','W02530036511','W02530036611','W02530036711','W02530036811','W02530036911','W02530037011','W02530037111','W02530037211','W02530037311','W02530037411','W02530037511','W02530037611','W02530037711','W02530039311','W02530039411','W02530039511','W02530039611','W02530039711','W02530039811','W02530039911','W02530040011','W02530040111','W02530040211','W02530040311','W02530040411','W02530040511','W02530040611','W02530040711','W02530041811','W02530046611','W02530046711','W02530046811','W02530046911','W02530047011','W02530047111','W02530047211','W02530047311','W02530047411','W02530047511','W02530047611','W02530047711','W02530047811','W02530047911','W02530048011','W02530048111','W02530048211','W02530048311','W02530048411','W02530048511','W02530048611','W02530048711','W02530048811','W02530048911','W02530049011','W02530049111','W02530049211','W02530049311','W02530049411','W02530049511','W02530049611','W02530049711','W02530049811','W02530049911','W02530050011'
+)]
+2013/06/26 16:39:18 - Set Variables.0 - Finished after 1 rows.
+2013/06/26 16:39:18 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/06/26 16:39:18 - Job wisma looping - Starting entry [Simple evaluation]
+2013/06/26 16:39:18 - Job wisma looping - exec(11, 0, Simple evaluation.0)
+2013/06/26 16:39:18 - Simple evaluation - Starting job entry
+2013/06/26 16:39:18 - Simple evaluation - Value to evaluate is CSV
+2013/06/26 16:39:18 - Job wisma looping - Starting entry [Simple evaluation 2]
+2013/06/26 16:39:18 - Job wisma looping - exec(12, 0, Simple evaluation 2.0)
+2013/06/26 16:39:18 - Simple evaluation - Starting job entry
+2013/06/26 16:39:18 - Simple evaluation - Value to evaluate is CSV
+2013/06/26 16:39:18 - Job wisma looping - Starting entry [Simple evaluation 3 2 2]
+2013/06/26 16:39:18 - Job wisma looping - exec(13, 0, Simple evaluation 3 2 2.0)
+2013/06/26 16:39:18 - Simple evaluation - Starting job entry
+2013/06/26 16:39:18 - Simple evaluation - Value to evaluate is Y
+2013/06/26 16:39:18 - Job wisma looping - Starting entry [To Csv append]
+2013/06/26 16:39:18 - Job wisma looping - exec(14, 0, To Csv append.0)
+2013/06/26 16:39:18 - To Csv append - Starting job entry
+2013/06/26 16:39:18 - To Csv append - Opening transformation: [file:///C:/12023227/Workspace BI/RTW_Pentaho/to_csv_append.ktr]
+2013/06/26 16:39:18 - To Csv append - Loading transformation from XML file [file:///C:/12023227/Workspace BI/RTW_Pentaho/to_csv_append.ktr]
+2013/06/26 16:39:18 - To Csv append - Starting transformation...(file=${Internal.Job.Filename.Directory}/to_csv_append.ktr, name=To Csv append, repinfo=null)
+2013/06/26 16:39:18 - to_csv_append - Transformation is pre-loaded.
+2013/06/26 16:39:18 - to_csv_append - Dispatching started for transformation [to_csv_append]
+2013/06/26 16:39:18 - to_csv_append - Nr of arguments detected:0 
+2013/06/26 16:39:18 - to_csv_append - This is not a replay transformation
+2013/06/26 16:39:18 - to_csv_append - I found 2 different steps to launch.
+2013/06/26 16:39:18 - to_csv_append - Allocating rowsets...
+2013/06/26 16:39:18 - to_csv_append -  Allocating rowsets for step 0 --> Table input
+2013/06/26 16:39:18 - to_csv_append -   prevcopies = 1, nextcopies=1
+2013/06/26 16:39:18 - to_csv_append - Transformation allocated new rowset [Table input.0 - Text file output.0]
+2013/06/26 16:39:18 - to_csv_append -  Allocated 1 rowsets for step 0 --> Table input  
+2013/06/26 16:39:18 - to_csv_append -  Allocating rowsets for step 1 --> Text file output
+2013/06/26 16:39:18 - to_csv_append -  Allocated 1 rowsets for step 1 --> Text file output  
+2013/06/26 16:39:18 - to_csv_append - Allocating Steps & StepData...
+2013/06/26 16:39:18 - to_csv_append -  Transformation is about to allocate step [Table input] of type [TableInput]
+2013/06/26 16:39:18 - Table input.0 - distribution activated
+2013/06/26 16:39:18 - Table input.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:18 - Table input.0 - Step info: nrinput=0 nroutput=1
+2013/06/26 16:39:18 - Table input.0 - output rel. is  1:1
+2013/06/26 16:39:18 - Table input.0 - Found output rowset [Table input.0 - Text file output.0]
+2013/06/26 16:39:18 - Table input.0 - Finished dispatching
+2013/06/26 16:39:18 - to_csv_append -  Transformation has allocated a new step: [Table input].0
+2013/06/26 16:39:18 - to_csv_append -  Transformation is about to allocate step [Text file output] of type [TextFileOutput]
+2013/06/26 16:39:18 - Text file output.0 - distribution activated
+2013/06/26 16:39:18 - Text file output.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:18 - Text file output.0 - Step info: nrinput=1 nroutput=0
+2013/06/26 16:39:18 - Text file output.0 - Got previous step from [Text file output] #0 --> Table input
+2013/06/26 16:39:18 - Text file output.0 - input rel is 1:1
+2013/06/26 16:39:18 - Text file output.0 - Found input rowset [Table input.0 - Text file output.0]
+2013/06/26 16:39:18 - Text file output.0 - Finished dispatching
+2013/06/26 16:39:18 - to_csv_append -  Transformation has allocated a new step: [Text file output].0
+2013/06/26 16:39:18 - to_csv_append - This transformation can be replayed with replay date: 2013/06/26 16:39:18
+2013/06/26 16:39:18 - to_csv_append - Initialising 2 steps...
+2013/06/26 16:39:18 - Table input.0 - Running on slave server #0/1.
+2013/06/26 16:39:18 - Text file output.0 - Running on slave server #0/1.
+2013/06/26 16:39:18 - Text file output.0 - Parent folder exists [file:///C:/12023227/Workspace/RTW/output]!
+2013/06/26 16:39:18 - Text file output.0 - Opening output stream in nocompress mode
+2013/06/26 16:39:18 - Text file output.0 - Opening output stream in default encoding
+2013/06/26 16:39:18 - Text file output.0 - Opened new file with name [C:\12023227\Workspace\RTW\output/20130626_test.csv]
+2013/06/26 16:39:18 - TAMAN.WISMA - New database connection defined
+2013/06/26 16:39:18 - TAMAN.WISMA - Connected to database.
+2013/06/26 16:39:18 - TAMAN.WISMA - Auto commit off
+2013/06/26 16:39:18 - Table input.0 - Connected to database...
+2013/06/26 16:39:18 - to_csv_append - Step [Table input.0] initialized flawlessly.
+2013/06/26 16:39:18 - to_csv_append - Step [Text file output.0] initialized flawlessly.
+2013/06/26 16:39:18 - Table input.0 - Starting to run...
+2013/06/26 16:39:18 - Text file output.0 - Starting to run...
+2013/06/26 16:39:18 - to_csv_append - Transformation has allocated 2 threads and 1 rowsets.
+2013/06/26 16:39:18 - Table input.0 - SQL query : Select 
+Left(b.NoAppID,5) as WismaCode,
+b.NoAppid as H_NoAppid, d.account_state_Id as H_account_state_id
+, a1.Due_date as H_LastDueDate_LoanTrxn
+, a1.Action_Date as H_LastPaymentDate
+,e.action_date as H_LastDueDate
+,f.action_date as H_NextDueDate
+,(g.orig_principal+g.orig_interest)-(g.principal_paid+g.interest_paid) as H_Tunggakan
+,case when f.action_date < current_date and f.payment_status='0'  and a1.installment_id=0 then 'BAD_DISBURSED'
+	when f.action_date < current_date and f.payment_status='0' then 'BAD' 	
+	else 'GOOD' end as H_Rank 
+,wb.NoAppid as W_NoAppid, wd.account_state_Id as W_account_state_id
+, wa1.Due_date as W_LastDueDate_LoanTrxn
+, wa1.Action_Date as W_LastPaymentDate
+,we.action_date as W_LastDueDate
+,wf.action_date as W_NextDueDate
+,(wg.orig_principal+wg.orig_interest)-(wg.principal_paid+wg.interest_paid) as W_Tunggakan
+,case when wf.action_date < current_date and wf.payment_status='0'  and wa1.installment_id=0 then 'BAD_DISBURSED'
+	when wf.action_date < current_date and wf.payment_status='0' then 'BAD' 	
+	else 'GOOD' end as W_Rank 
+-- ,a1.installment_id
+
+from ((prospera.account_trxn a1  left outer join prospera.account_trxn a2 on a1.account_id=a2.account_id 
+									and a1.account_trxn_id<a2.account_trxn_id)
+	inner join prospera.loan_account b on a1.account_id=b.account_id
+	inner join prospera.account d on b.account_id=d.account_id
+	left join prospera.loan_schedule e on e.account_id=a1.account_id and e.installment_id=a1.installment_id
+	left outer join prospera.loan_summary g on g.account_id=a1.account_id
+	left outer join prospera.loan_schedule f on f.account_id=a1.account_id and f.installment_id=a1.installment_id+1)
+	inner join 
+	((W0001_20130430.account_trxn wa1  left outer join W0001_20130430.account_trxn wa2 on wa1.account_id=wa2.account_id 
+									and wa1.account_trxn_id<wa2.account_trxn_id)
+	inner join W0001_20130430.loan_account wb on wa1.account_id=wb.account_id
+	inner join W0001_20130430.account wd on wb.account_id=wd.account_id
+	left join W0001_20130430.loan_schedule we on we.account_id=wa1.account_id and we.installment_id=wa1.installment_id
+	left outer join W0001_20130430.loan_summary wg on wg.account_id=wa1.account_id
+	left outer join W0001_20130430.loan_schedule wf on wf.account_id=wa1.account_id and wf.installment_id=wa1.installment_id+1)
+on b.NoAppid=wb.NoAppid	
+Where a2.account_trxn_id is   null
+	and wa2.account_trxn_id is null
+and b.NoAppid in (
+'W00140000112','W00140000312','W00140000712','W00140000812','W00140016712','W00140028012','W00140028212','W00140041212','W00140041712','w00140046712','w00140046812','W00140047412','W00140047612','w00140047812','W00140052112','W00140052312','W00140052512','W00140052612','W00140053711','W00140056213','W00140060912','W00140061312','W00140061412','W00140064113','W00140068912','W00140069611','W00140070911','W00140074012','W00140074212','W00140094812','W00140095112','W00140097311','W00140097411','W00140097511','W00140097611','W00140097711','W00140097811','W00140097911','W00140098011','W00140098111','W00140098211','W00140098311','W00140098411','W00140098511','W00140098611','W00140098711','W00140098811','W00140098911','W00140099011','W00140099111','W00140099311','W00140099411','W00140099511','W00140099611','W00140108711','W00140108811','W00140108911','W00140109011','W00140109111','W00140109211','W00140109311','W00140109511','W00140109611','W00140109711','W00140109811','W00140109911','W00140110011','W00140110111','W00140110211','W00140110311','W00140110411','W00140110511','W00140110611','W00140110711','W00140110811','W00140110911','W00140111011','W00140111111','W00140124811','W00140131411','W00140132811','W00140133211','W00140135011','W00140135311','W00140135711','W00140136211','W00140136511','W00140153611','W00140154211','W02530010611','W02530010711','W02530010811','W02530010911','W02530011011','W02530011111','W02530011211','W02530011311','W02530011411','W02530011511','W02530011611','W02530011711','W02530011811','W02530011911','W02530012011','W02530015111','W02530015211','W02530015311','W02530015411','W02530015511','W02530015611','W02530015711','W02530015811','W02530015911','W02530016011','W02530016111','W02530016311','W02530016411','W02530016611','W02530016711','W02530016811','W02530016911','W02530017011','W02530017111','W02530017211','W02530017311','W02530017411','W02530017511','W02530017611','W02530017811','W02530017911','W02530018011','W02530018111','W02530018311','W02530018411','W02530018511','W02530018611','W02530018711','W02530018911','W02530019011','W02530019111','W02530019211','W02530019311','W02530019411','W02530019511','W02530021211','W02530021411','W02530021611','W02530021711','W02530021911','W02530022011','W02530022111','W02530022211','W02530022311','W02530022411','W02530022511','W02530022611','W02530023511','W02530023611','W02530023711','W02530023811','W02530023911','W02530024011','W02530024111','W02530024211','W02530024311','W02530024411','W02530024511','W02530024611','W02530024711','W02530024811','W02530024911','W02530025011','W02530025111','W02530025211','W02530025311','W02530025411','W02530025511','W02530025611','W02530025711','W02530025811','W02530025911','W02530026011','W02530026111','W02530026211','W02530026311','W02530026411','W02530026511','W02530026611','W02530026711','W02530026811','W02530026911','W02530027011','W02530027111','W02530027211','W02530027311','W02530027411','W02530027511','W02530027611','W02530027711','W02530027811','W02530027911','W02530028011','W02530028111','W02530028211','W02530028311','W02530028411','W02530029011','W02530029111','W02530029311','W02530029411','W02530029511','W02530029611','W02530029711','W02530029811','W02530029911','W02530030011','W02530030111','W02530030211','W02530030311','W02530030411','W02530030911','W02530031411','W02530032011','W02530032111','W02530032211','W02530032311','W02530032411','W02530032511','W02530032611','W02530032711','W02530032811','W02530032911','W02530033011','W02530033111','W02530033211','W02530033311','W02530033411','W02530033511','W02530033611','W02530033711','W02530033811','W02530033911','W02530036511','W02530036611','W02530036711','W02530036811','W02530036911','W02530037011','W02530037111','W02530037211','W02530037311','W02530037411','W02530037511','W02530037611','W02530037711','W02530039311','W02530039411','W02530039511','W02530039611','W02530039711','W02530039811','W02530039911','W02530040011','W02530040111','W02530040211','W02530040311','W02530040411','W02530040511','W02530040611','W02530040711','W02530041811','W02530046611','W02530046711','W02530046811','W02530046911','W02530047011','W02530047111','W02530047211','W02530047311','W02530047411','W02530047511','W02530047611','W02530047711','W02530047811','W02530047911','W02530048011','W02530048111','W02530048211','W02530048311','W02530048411','W02530048511','W02530048611','W02530048711','W02530048811','W02530048911','W02530049011','W02530049111','W02530049211','W02530049311','W02530049411','W02530049511','W02530049611','W02530049711','W02530049811','W02530049911','W02530050011'
+)
+2013/06/26 16:39:19 - Table input.0 - Finished reading query, closing connection.
+2013/06/26 16:39:19 - TAMAN.WISMA - Connection to database closed!
+2013/06/26 16:39:19 - Table input.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2013/06/26 16:39:19 - Text file output.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2013/06/26 16:39:19 - Job wisma looping - Starting entry [Success]
+2013/06/26 16:39:19 - Job wisma looping - exec(15, 0, Success.0)
+2013/06/26 16:39:19 - Success - Starting job entry
+2013/06/26 16:39:19 - Job wisma looping - Finished job entry [Success] (result=[true])
+2013/06/26 16:39:19 - Job wisma looping - Finished job entry [To Csv append] (result=[true])
+2013/06/26 16:39:19 - Job wisma looping - Finished job entry [Simple evaluation 3 2 2] (result=[true])
+2013/06/26 16:39:19 - Job wisma looping - Finished job entry [Simple evaluation 2] (result=[true])
+2013/06/26 16:39:19 - Job wisma looping - Finished job entry [Simple evaluation] (result=[true])
+2013/06/26 16:39:19 - Job wisma looping - Finished job entry [get wisma variable] (result=[true])
+2013/06/26 16:39:19 - Job wisma looping - exec(9, 0, START.0)
+2013/06/26 16:39:19 - START - Starting job entry
+2013/06/26 16:39:19 - Job wisma looping - Starting entry [get wisma variable]
+2013/06/26 16:39:19 - Job wisma looping - exec(10, 0, get wisma variable.0)
+2013/06/26 16:39:19 - get wisma variable - Starting job entry
+2013/06/26 16:39:19 - get wisma variable - Opening transformation: [file:///C:/12023227/Workspace BI/RTW_Pentaho/get_wisma_variable.ktr]
+2013/06/26 16:39:19 - get wisma variable - Loading transformation from XML file [file:///C:/12023227/Workspace BI/RTW_Pentaho/get_wisma_variable.ktr]
+2013/06/26 16:39:19 - get wisma variable - Starting transformation...(file=${Internal.Job.Filename.Directory}/get_wisma_variable.ktr, name=get wisma variable, repinfo=null)
+2013/06/26 16:39:19 - get_wisma_variable - Transformation is pre-loaded.
+2013/06/26 16:39:19 - get_wisma_variable - Dispatching started for transformation [get_wisma_variable]
+2013/06/26 16:39:19 - get_wisma_variable - Nr of arguments detected:0 
+2013/06/26 16:39:19 - get_wisma_variable - This is not a replay transformation
+2013/06/26 16:39:19 - get_wisma_variable - I found 2 different steps to launch.
+2013/06/26 16:39:19 - get_wisma_variable - Allocating rowsets...
+2013/06/26 16:39:19 - get_wisma_variable -  Allocating rowsets for step 0 --> Get rows from result
+2013/06/26 16:39:19 - get_wisma_variable -   prevcopies = 1, nextcopies=1
+2013/06/26 16:39:19 - get_wisma_variable - Transformation allocated new rowset [Get rows from result.0 - Set Variables.0]
+2013/06/26 16:39:19 - get_wisma_variable -  Allocated 1 rowsets for step 0 --> Get rows from result  
+2013/06/26 16:39:19 - get_wisma_variable -  Allocating rowsets for step 1 --> Set Variables
+2013/06/26 16:39:19 - get_wisma_variable -  Allocated 1 rowsets for step 1 --> Set Variables  
+2013/06/26 16:39:19 - get_wisma_variable - Allocating Steps & StepData...
+2013/06/26 16:39:19 - get_wisma_variable -  Transformation is about to allocate step [Get rows from result] of type [RowsFromResult]
+2013/06/26 16:39:19 - Get rows from result.0 - distribution activated
+2013/06/26 16:39:19 - Get rows from result.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:19 - Get rows from result.0 - Step info: nrinput=0 nroutput=1
+2013/06/26 16:39:19 - Get rows from result.0 - output rel. is  1:1
+2013/06/26 16:39:19 - Get rows from result.0 - Found output rowset [Get rows from result.0 - Set Variables.0]
+2013/06/26 16:39:19 - Get rows from result.0 - Finished dispatching
+2013/06/26 16:39:19 - get_wisma_variable -  Transformation has allocated a new step: [Get rows from result].0
+2013/06/26 16:39:19 - get_wisma_variable -  Transformation is about to allocate step [Set Variables] of type [SetVariable]
+2013/06/26 16:39:19 - Set Variables.0 - distribution activated
+2013/06/26 16:39:19 - Set Variables.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:19 - Set Variables.0 - Step info: nrinput=1 nroutput=0
+2013/06/26 16:39:19 - Set Variables.0 - Got previous step from [Set Variables] #0 --> Get rows from result
+2013/06/26 16:39:19 - Set Variables.0 - input rel is 1:1
+2013/06/26 16:39:19 - Set Variables.0 - Found input rowset [Get rows from result.0 - Set Variables.0]
+2013/06/26 16:39:19 - Set Variables.0 - Finished dispatching
+2013/06/26 16:39:19 - get_wisma_variable -  Transformation has allocated a new step: [Set Variables].0
+2013/06/26 16:39:19 - get_wisma_variable - This transformation can be replayed with replay date: 2013/06/26 16:39:19
+2013/06/26 16:39:19 - get_wisma_variable - Initialising 2 steps...
+2013/06/26 16:39:19 - Set Variables.0 - Running on slave server #0/1.
+2013/06/26 16:39:19 - Get rows from result.0 - Running on slave server #0/1.
+2013/06/26 16:39:19 - get_wisma_variable - Step [Get rows from result.0] initialized flawlessly.
+2013/06/26 16:39:19 - get_wisma_variable - Step [Set Variables.0] initialized flawlessly.
+2013/06/26 16:39:19 - get_wisma_variable - Transformation has allocated 2 threads and 1 rowsets.
+2013/06/26 16:39:19 - Set Variables.0 - Starting to run...
+2013/06/26 16:39:19 - Get rows from result.0 - Starting to run...
+2013/06/26 16:39:19 - Get rows from result.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/06/26 16:39:19 - Set Variables.0 - Setting environment variables...
+2013/06/26 16:39:19 - Set Variables.0 - Set variable SCHEMA_NAME to value [W0001_20130531]
+2013/06/26 16:39:19 - Set Variables.0 - Set variable QUERY to value [Select 
+Left(b.NoAppID,5) as WismaCode,
+b.NoAppid as H_NoAppid, d.account_state_Id as H_account_state_id
+, a1.Due_date as H_LastDueDate_LoanTrxn
+, a1.Action_Date as H_LastPaymentDate
+,e.action_date as H_LastDueDate
+,f.action_date as H_NextDueDate
+,(g.orig_principal+g.orig_interest)-(g.principal_paid+g.interest_paid) as H_Tunggakan
+,case when f.action_date < current_date and f.payment_status='0'  and a1.installment_id=0 then 'BAD_DISBURSED'
+	when f.action_date < current_date and f.payment_status='0' then 'BAD' 	
+	else 'GOOD' end as H_Rank 
+,wb.NoAppid as W_NoAppid, wd.account_state_Id as W_account_state_id
+, wa1.Due_date as W_LastDueDate_LoanTrxn
+, wa1.Action_Date as W_LastPaymentDate
+,we.action_date as W_LastDueDate
+,wf.action_date as W_NextDueDate
+,(wg.orig_principal+wg.orig_interest)-(wg.principal_paid+wg.interest_paid) as W_Tunggakan
+,case when wf.action_date < current_date and wf.payment_status='0'  and wa1.installment_id=0 then 'BAD_DISBURSED'
+	when wf.action_date < current_date and wf.payment_status='0' then 'BAD' 	
+	else 'GOOD' end as W_Rank 
+-- ,a1.installment_id
+
+from ((prospera.account_trxn a1  left outer join prospera.account_trxn a2 on a1.account_id=a2.account_id 
+									and a1.account_trxn_id<a2.account_trxn_id)
+	inner join prospera.loan_account b on a1.account_id=b.account_id
+	inner join prospera.account d on b.account_id=d.account_id
+	left join prospera.loan_schedule e on e.account_id=a1.account_id and e.installment_id=a1.installment_id
+	left outer join prospera.loan_summary g on g.account_id=a1.account_id
+	left outer join prospera.loan_schedule f on f.account_id=a1.account_id and f.installment_id=a1.installment_id+1)
+	inner join 
+	((W0001_20130531.account_trxn wa1  left outer join W0001_20130531.account_trxn wa2 on wa1.account_id=wa2.account_id 
+									and wa1.account_trxn_id<wa2.account_trxn_id)
+	inner join W0001_20130531.loan_account wb on wa1.account_id=wb.account_id
+	inner join W0001_20130531.account wd on wb.account_id=wd.account_id
+	left join W0001_20130531.loan_schedule we on we.account_id=wa1.account_id and we.installment_id=wa1.installment_id
+	left outer join W0001_20130531.loan_summary wg on wg.account_id=wa1.account_id
+	left outer join W0001_20130531.loan_schedule wf on wf.account_id=wa1.account_id and wf.installment_id=wa1.installment_id+1)
+on b.NoAppid=wb.NoAppid	
+Where a2.account_trxn_id is   null
+	and wa2.account_trxn_id is null
+and b.NoAppid in (
+'W00140000112','W00140000312','W00140000712','W00140000812','W00140016712','W00140028012','W00140028212','W00140041212','W00140041712','w00140046712','w00140046812','W00140047412','W00140047612','w00140047812','W00140052112','W00140052312','W00140052512','W00140052612','W00140053711','W00140056213','W00140060912','W00140061312','W00140061412','W00140064113','W00140068912','W00140069611','W00140070911','W00140074012','W00140074212','W00140094812','W00140095112','W00140097311','W00140097411','W00140097511','W00140097611','W00140097711','W00140097811','W00140097911','W00140098011','W00140098111','W00140098211','W00140098311','W00140098411','W00140098511','W00140098611','W00140098711','W00140098811','W00140098911','W00140099011','W00140099111','W00140099311','W00140099411','W00140099511','W00140099611','W00140108711','W00140108811','W00140108911','W00140109011','W00140109111','W00140109211','W00140109311','W00140109511','W00140109611','W00140109711','W00140109811','W00140109911','W00140110011','W00140110111','W00140110211','W00140110311','W00140110411','W00140110511','W00140110611','W00140110711','W00140110811','W00140110911','W00140111011','W00140111111','W00140124811','W00140131411','W00140132811','W00140133211','W00140135011','W00140135311','W00140135711','W00140136211','W00140136511','W00140153611','W00140154211','W02530010611','W02530010711','W02530010811','W02530010911','W02530011011','W02530011111','W02530011211','W02530011311','W02530011411','W02530011511','W02530011611','W02530011711','W02530011811','W02530011911','W02530012011','W02530015111','W02530015211','W02530015311','W02530015411','W02530015511','W02530015611','W02530015711','W02530015811','W02530015911','W02530016011','W02530016111','W02530016311','W02530016411','W02530016611','W02530016711','W02530016811','W02530016911','W02530017011','W02530017111','W02530017211','W02530017311','W02530017411','W02530017511','W02530017611','W02530017811','W02530017911','W02530018011','W02530018111','W02530018311','W02530018411','W02530018511','W02530018611','W02530018711','W02530018911','W02530019011','W02530019111','W02530019211','W02530019311','W02530019411','W02530019511','W02530021211','W02530021411','W02530021611','W02530021711','W02530021911','W02530022011','W02530022111','W02530022211','W02530022311','W02530022411','W02530022511','W02530022611','W02530023511','W02530023611','W02530023711','W02530023811','W02530023911','W02530024011','W02530024111','W02530024211','W02530024311','W02530024411','W02530024511','W02530024611','W02530024711','W02530024811','W02530024911','W02530025011','W02530025111','W02530025211','W02530025311','W02530025411','W02530025511','W02530025611','W02530025711','W02530025811','W02530025911','W02530026011','W02530026111','W02530026211','W02530026311','W02530026411','W02530026511','W02530026611','W02530026711','W02530026811','W02530026911','W02530027011','W02530027111','W02530027211','W02530027311','W02530027411','W02530027511','W02530027611','W02530027711','W02530027811','W02530027911','W02530028011','W02530028111','W02530028211','W02530028311','W02530028411','W02530029011','W02530029111','W02530029311','W02530029411','W02530029511','W02530029611','W02530029711','W02530029811','W02530029911','W02530030011','W02530030111','W02530030211','W02530030311','W02530030411','W02530030911','W02530031411','W02530032011','W02530032111','W02530032211','W02530032311','W02530032411','W02530032511','W02530032611','W02530032711','W02530032811','W02530032911','W02530033011','W02530033111','W02530033211','W02530033311','W02530033411','W02530033511','W02530033611','W02530033711','W02530033811','W02530033911','W02530036511','W02530036611','W02530036711','W02530036811','W02530036911','W02530037011','W02530037111','W02530037211','W02530037311','W02530037411','W02530037511','W02530037611','W02530037711','W02530039311','W02530039411','W02530039511','W02530039611','W02530039711','W02530039811','W02530039911','W02530040011','W02530040111','W02530040211','W02530040311','W02530040411','W02530040511','W02530040611','W02530040711','W02530041811','W02530046611','W02530046711','W02530046811','W02530046911','W02530047011','W02530047111','W02530047211','W02530047311','W02530047411','W02530047511','W02530047611','W02530047711','W02530047811','W02530047911','W02530048011','W02530048111','W02530048211','W02530048311','W02530048411','W02530048511','W02530048611','W02530048711','W02530048811','W02530048911','W02530049011','W02530049111','W02530049211','W02530049311','W02530049411','W02530049511','W02530049611','W02530049711','W02530049811','W02530049911','W02530050011'
+)]
+2013/06/26 16:39:19 - Set Variables.0 - Finished after 1 rows.
+2013/06/26 16:39:19 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/06/26 16:39:19 - Job wisma looping - Starting entry [Simple evaluation]
+2013/06/26 16:39:19 - Job wisma looping - exec(11, 0, Simple evaluation.0)
+2013/06/26 16:39:19 - Simple evaluation - Starting job entry
+2013/06/26 16:39:19 - Simple evaluation - Value to evaluate is CSV
+2013/06/26 16:39:19 - Job wisma looping - Starting entry [Simple evaluation 2]
+2013/06/26 16:39:19 - Job wisma looping - exec(12, 0, Simple evaluation 2.0)
+2013/06/26 16:39:19 - Simple evaluation - Starting job entry
+2013/06/26 16:39:19 - Simple evaluation - Value to evaluate is CSV
+2013/06/26 16:39:19 - Job wisma looping - Starting entry [Simple evaluation 3 2 2]
+2013/06/26 16:39:19 - Job wisma looping - exec(13, 0, Simple evaluation 3 2 2.0)
+2013/06/26 16:39:19 - Simple evaluation - Starting job entry
+2013/06/26 16:39:19 - Simple evaluation - Value to evaluate is Y
+2013/06/26 16:39:19 - Job wisma looping - Starting entry [To Csv append]
+2013/06/26 16:39:19 - Job wisma looping - exec(14, 0, To Csv append.0)
+2013/06/26 16:39:19 - To Csv append - Starting job entry
+2013/06/26 16:39:19 - To Csv append - Opening transformation: [file:///C:/12023227/Workspace BI/RTW_Pentaho/to_csv_append.ktr]
+2013/06/26 16:39:19 - To Csv append - Loading transformation from XML file [file:///C:/12023227/Workspace BI/RTW_Pentaho/to_csv_append.ktr]
+2013/06/26 16:39:19 - To Csv append - Starting transformation...(file=${Internal.Job.Filename.Directory}/to_csv_append.ktr, name=To Csv append, repinfo=null)
+2013/06/26 16:39:19 - to_csv_append - Transformation is pre-loaded.
+2013/06/26 16:39:19 - to_csv_append - Dispatching started for transformation [to_csv_append]
+2013/06/26 16:39:19 - to_csv_append - Nr of arguments detected:0 
+2013/06/26 16:39:19 - to_csv_append - This is not a replay transformation
+2013/06/26 16:39:19 - to_csv_append - I found 2 different steps to launch.
+2013/06/26 16:39:19 - to_csv_append - Allocating rowsets...
+2013/06/26 16:39:19 - to_csv_append -  Allocating rowsets for step 0 --> Table input
+2013/06/26 16:39:19 - to_csv_append -   prevcopies = 1, nextcopies=1
+2013/06/26 16:39:19 - to_csv_append - Transformation allocated new rowset [Table input.0 - Text file output.0]
+2013/06/26 16:39:19 - to_csv_append -  Allocated 1 rowsets for step 0 --> Table input  
+2013/06/26 16:39:19 - to_csv_append -  Allocating rowsets for step 1 --> Text file output
+2013/06/26 16:39:19 - to_csv_append -  Allocated 1 rowsets for step 1 --> Text file output  
+2013/06/26 16:39:19 - to_csv_append - Allocating Steps & StepData...
+2013/06/26 16:39:19 - to_csv_append -  Transformation is about to allocate step [Table input] of type [TableInput]
+2013/06/26 16:39:19 - Table input.0 - distribution activated
+2013/06/26 16:39:19 - Table input.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:19 - Table input.0 - Step info: nrinput=0 nroutput=1
+2013/06/26 16:39:19 - Table input.0 - output rel. is  1:1
+2013/06/26 16:39:19 - Table input.0 - Found output rowset [Table input.0 - Text file output.0]
+2013/06/26 16:39:19 - Table input.0 - Finished dispatching
+2013/06/26 16:39:19 - to_csv_append -  Transformation has allocated a new step: [Table input].0
+2013/06/26 16:39:19 - to_csv_append -  Transformation is about to allocate step [Text file output] of type [TextFileOutput]
+2013/06/26 16:39:19 - Text file output.0 - distribution activated
+2013/06/26 16:39:19 - Text file output.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:19 - Text file output.0 - Step info: nrinput=1 nroutput=0
+2013/06/26 16:39:19 - Text file output.0 - Got previous step from [Text file output] #0 --> Table input
+2013/06/26 16:39:19 - Text file output.0 - input rel is 1:1
+2013/06/26 16:39:19 - Text file output.0 - Found input rowset [Table input.0 - Text file output.0]
+2013/06/26 16:39:19 - Text file output.0 - Finished dispatching
+2013/06/26 16:39:19 - to_csv_append -  Transformation has allocated a new step: [Text file output].0
+2013/06/26 16:39:19 - to_csv_append - This transformation can be replayed with replay date: 2013/06/26 16:39:19
+2013/06/26 16:39:19 - to_csv_append - Initialising 2 steps...
+2013/06/26 16:39:19 - Table input.0 - Running on slave server #0/1.
+2013/06/26 16:39:19 - Text file output.0 - Running on slave server #0/1.
+2013/06/26 16:39:19 - TAMAN.WISMA - New database connection defined
+2013/06/26 16:39:19 - Text file output.0 - Parent folder exists [file:///C:/12023227/Workspace/RTW/output]!
+2013/06/26 16:39:19 - Text file output.0 - Opening output stream in nocompress mode
+2013/06/26 16:39:19 - Text file output.0 - Opening output stream in default encoding
+2013/06/26 16:39:19 - Text file output.0 - Opened new file with name [C:\12023227\Workspace\RTW\output/20130626_test.csv]
+2013/06/26 16:39:19 - TAMAN.WISMA - Connected to database.
+2013/06/26 16:39:19 - TAMAN.WISMA - Auto commit off
+2013/06/26 16:39:19 - Table input.0 - Connected to database...
+2013/06/26 16:39:19 - to_csv_append - Step [Table input.0] initialized flawlessly.
+2013/06/26 16:39:19 - to_csv_append - Step [Text file output.0] initialized flawlessly.
+2013/06/26 16:39:19 - to_csv_append - Transformation has allocated 2 threads and 1 rowsets.
+2013/06/26 16:39:19 - Table input.0 - Starting to run...
+2013/06/26 16:39:19 - Text file output.0 - Starting to run...
+2013/06/26 16:39:19 - Table input.0 - SQL query : Select 
+Left(b.NoAppID,5) as WismaCode,
+b.NoAppid as H_NoAppid, d.account_state_Id as H_account_state_id
+, a1.Due_date as H_LastDueDate_LoanTrxn
+, a1.Action_Date as H_LastPaymentDate
+,e.action_date as H_LastDueDate
+,f.action_date as H_NextDueDate
+,(g.orig_principal+g.orig_interest)-(g.principal_paid+g.interest_paid) as H_Tunggakan
+,case when f.action_date < current_date and f.payment_status='0'  and a1.installment_id=0 then 'BAD_DISBURSED'
+	when f.action_date < current_date and f.payment_status='0' then 'BAD' 	
+	else 'GOOD' end as H_Rank 
+,wb.NoAppid as W_NoAppid, wd.account_state_Id as W_account_state_id
+, wa1.Due_date as W_LastDueDate_LoanTrxn
+, wa1.Action_Date as W_LastPaymentDate
+,we.action_date as W_LastDueDate
+,wf.action_date as W_NextDueDate
+,(wg.orig_principal+wg.orig_interest)-(wg.principal_paid+wg.interest_paid) as W_Tunggakan
+,case when wf.action_date < current_date and wf.payment_status='0'  and wa1.installment_id=0 then 'BAD_DISBURSED'
+	when wf.action_date < current_date and wf.payment_status='0' then 'BAD' 	
+	else 'GOOD' end as W_Rank 
+-- ,a1.installment_id
+
+from ((prospera.account_trxn a1  left outer join prospera.account_trxn a2 on a1.account_id=a2.account_id 
+									and a1.account_trxn_id<a2.account_trxn_id)
+	inner join prospera.loan_account b on a1.account_id=b.account_id
+	inner join prospera.account d on b.account_id=d.account_id
+	left join prospera.loan_schedule e on e.account_id=a1.account_id and e.installment_id=a1.installment_id
+	left outer join prospera.loan_summary g on g.account_id=a1.account_id
+	left outer join prospera.loan_schedule f on f.account_id=a1.account_id and f.installment_id=a1.installment_id+1)
+	inner join 
+	((W0001_20130531.account_trxn wa1  left outer join W0001_20130531.account_trxn wa2 on wa1.account_id=wa2.account_id 
+									and wa1.account_trxn_id<wa2.account_trxn_id)
+	inner join W0001_20130531.loan_account wb on wa1.account_id=wb.account_id
+	inner join W0001_20130531.account wd on wb.account_id=wd.account_id
+	left join W0001_20130531.loan_schedule we on we.account_id=wa1.account_id and we.installment_id=wa1.installment_id
+	left outer join W0001_20130531.loan_summary wg on wg.account_id=wa1.account_id
+	left outer join W0001_20130531.loan_schedule wf on wf.account_id=wa1.account_id and wf.installment_id=wa1.installment_id+1)
+on b.NoAppid=wb.NoAppid	
+Where a2.account_trxn_id is   null
+	and wa2.account_trxn_id is null
+and b.NoAppid in (
+'W00140000112','W00140000312','W00140000712','W00140000812','W00140016712','W00140028012','W00140028212','W00140041212','W00140041712','w00140046712','w00140046812','W00140047412','W00140047612','w00140047812','W00140052112','W00140052312','W00140052512','W00140052612','W00140053711','W00140056213','W00140060912','W00140061312','W00140061412','W00140064113','W00140068912','W00140069611','W00140070911','W00140074012','W00140074212','W00140094812','W00140095112','W00140097311','W00140097411','W00140097511','W00140097611','W00140097711','W00140097811','W00140097911','W00140098011','W00140098111','W00140098211','W00140098311','W00140098411','W00140098511','W00140098611','W00140098711','W00140098811','W00140098911','W00140099011','W00140099111','W00140099311','W00140099411','W00140099511','W00140099611','W00140108711','W00140108811','W00140108911','W00140109011','W00140109111','W00140109211','W00140109311','W00140109511','W00140109611','W00140109711','W00140109811','W00140109911','W00140110011','W00140110111','W00140110211','W00140110311','W00140110411','W00140110511','W00140110611','W00140110711','W00140110811','W00140110911','W00140111011','W00140111111','W00140124811','W00140131411','W00140132811','W00140133211','W00140135011','W00140135311','W00140135711','W00140136211','W00140136511','W00140153611','W00140154211','W02530010611','W02530010711','W02530010811','W02530010911','W02530011011','W02530011111','W02530011211','W02530011311','W02530011411','W02530011511','W02530011611','W02530011711','W02530011811','W02530011911','W02530012011','W02530015111','W02530015211','W02530015311','W02530015411','W02530015511','W02530015611','W02530015711','W02530015811','W02530015911','W02530016011','W02530016111','W02530016311','W02530016411','W02530016611','W02530016711','W02530016811','W02530016911','W02530017011','W02530017111','W02530017211','W02530017311','W02530017411','W02530017511','W02530017611','W02530017811','W02530017911','W02530018011','W02530018111','W02530018311','W02530018411','W02530018511','W02530018611','W02530018711','W02530018911','W02530019011','W02530019111','W02530019211','W02530019311','W02530019411','W02530019511','W02530021211','W02530021411','W02530021611','W02530021711','W02530021911','W02530022011','W02530022111','W02530022211','W02530022311','W02530022411','W02530022511','W02530022611','W02530023511','W02530023611','W02530023711','W02530023811','W02530023911','W02530024011','W02530024111','W02530024211','W02530024311','W02530024411','W02530024511','W02530024611','W02530024711','W02530024811','W02530024911','W02530025011','W02530025111','W02530025211','W02530025311','W02530025411','W02530025511','W02530025611','W02530025711','W02530025811','W02530025911','W02530026011','W02530026111','W02530026211','W02530026311','W02530026411','W02530026511','W02530026611','W02530026711','W02530026811','W02530026911','W02530027011','W02530027111','W02530027211','W02530027311','W02530027411','W02530027511','W02530027611','W02530027711','W02530027811','W02530027911','W02530028011','W02530028111','W02530028211','W02530028311','W02530028411','W02530029011','W02530029111','W02530029311','W02530029411','W02530029511','W02530029611','W02530029711','W02530029811','W02530029911','W02530030011','W02530030111','W02530030211','W02530030311','W02530030411','W02530030911','W02530031411','W02530032011','W02530032111','W02530032211','W02530032311','W02530032411','W02530032511','W02530032611','W02530032711','W02530032811','W02530032911','W02530033011','W02530033111','W02530033211','W02530033311','W02530033411','W02530033511','W02530033611','W02530033711','W02530033811','W02530033911','W02530036511','W02530036611','W02530036711','W02530036811','W02530036911','W02530037011','W02530037111','W02530037211','W02530037311','W02530037411','W02530037511','W02530037611','W02530037711','W02530039311','W02530039411','W02530039511','W02530039611','W02530039711','W02530039811','W02530039911','W02530040011','W02530040111','W02530040211','W02530040311','W02530040411','W02530040511','W02530040611','W02530040711','W02530041811','W02530046611','W02530046711','W02530046811','W02530046911','W02530047011','W02530047111','W02530047211','W02530047311','W02530047411','W02530047511','W02530047611','W02530047711','W02530047811','W02530047911','W02530048011','W02530048111','W02530048211','W02530048311','W02530048411','W02530048511','W02530048611','W02530048711','W02530048811','W02530048911','W02530049011','W02530049111','W02530049211','W02530049311','W02530049411','W02530049511','W02530049611','W02530049711','W02530049811','W02530049911','W02530050011'
+)
+2013/06/26 16:39:20 - Table input.0 - Finished reading query, closing connection.
+2013/06/26 16:39:20 - TAMAN.WISMA - Connection to database closed!
+2013/06/26 16:39:20 - Table input.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2013/06/26 16:39:20 - Text file output.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2013/06/26 16:39:20 - Job wisma looping - Starting entry [Success]
+2013/06/26 16:39:20 - Job wisma looping - exec(15, 0, Success.0)
+2013/06/26 16:39:20 - Success - Starting job entry
+2013/06/26 16:39:20 - Job wisma looping - Finished job entry [Success] (result=[true])
+2013/06/26 16:39:20 - Job wisma looping - Finished job entry [To Csv append] (result=[true])
+2013/06/26 16:39:20 - Job wisma looping - Finished job entry [Simple evaluation 3 2 2] (result=[true])
+2013/06/26 16:39:20 - Job wisma looping - Finished job entry [Simple evaluation 2] (result=[true])
+2013/06/26 16:39:20 - Job wisma looping - Finished job entry [Simple evaluation] (result=[true])
+2013/06/26 16:39:20 - Job wisma looping - Finished job entry [get wisma variable] (result=[true])
+2013/06/26 16:39:20 - Job wisma looping - exec(9, 0, START.0)
+2013/06/26 16:39:20 - START - Starting job entry
+2013/06/26 16:39:20 - Job wisma looping - Starting entry [get wisma variable]
+2013/06/26 16:39:20 - Job wisma looping - exec(10, 0, get wisma variable.0)
+2013/06/26 16:39:20 - get wisma variable - Starting job entry
+2013/06/26 16:39:20 - get wisma variable - Opening transformation: [file:///C:/12023227/Workspace BI/RTW_Pentaho/get_wisma_variable.ktr]
+2013/06/26 16:39:20 - get wisma variable - Loading transformation from XML file [file:///C:/12023227/Workspace BI/RTW_Pentaho/get_wisma_variable.ktr]
+2013/06/26 16:39:20 - get wisma variable - Starting transformation...(file=${Internal.Job.Filename.Directory}/get_wisma_variable.ktr, name=get wisma variable, repinfo=null)
+2013/06/26 16:39:20 - get_wisma_variable - Transformation is pre-loaded.
+2013/06/26 16:39:20 - get_wisma_variable - Dispatching started for transformation [get_wisma_variable]
+2013/06/26 16:39:20 - get_wisma_variable - Nr of arguments detected:0 
+2013/06/26 16:39:20 - get_wisma_variable - This is not a replay transformation
+2013/06/26 16:39:20 - get_wisma_variable - I found 2 different steps to launch.
+2013/06/26 16:39:20 - get_wisma_variable - Allocating rowsets...
+2013/06/26 16:39:20 - get_wisma_variable -  Allocating rowsets for step 0 --> Get rows from result
+2013/06/26 16:39:20 - get_wisma_variable -   prevcopies = 1, nextcopies=1
+2013/06/26 16:39:20 - get_wisma_variable - Transformation allocated new rowset [Get rows from result.0 - Set Variables.0]
+2013/06/26 16:39:20 - get_wisma_variable -  Allocated 1 rowsets for step 0 --> Get rows from result  
+2013/06/26 16:39:20 - get_wisma_variable -  Allocating rowsets for step 1 --> Set Variables
+2013/06/26 16:39:20 - get_wisma_variable -  Allocated 1 rowsets for step 1 --> Set Variables  
+2013/06/26 16:39:20 - get_wisma_variable - Allocating Steps & StepData...
+2013/06/26 16:39:20 - get_wisma_variable -  Transformation is about to allocate step [Get rows from result] of type [RowsFromResult]
+2013/06/26 16:39:20 - Get rows from result.0 - distribution activated
+2013/06/26 16:39:20 - Get rows from result.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:20 - Get rows from result.0 - Step info: nrinput=0 nroutput=1
+2013/06/26 16:39:20 - Get rows from result.0 - output rel. is  1:1
+2013/06/26 16:39:20 - Get rows from result.0 - Found output rowset [Get rows from result.0 - Set Variables.0]
+2013/06/26 16:39:20 - Get rows from result.0 - Finished dispatching
+2013/06/26 16:39:20 - get_wisma_variable -  Transformation has allocated a new step: [Get rows from result].0
+2013/06/26 16:39:20 - get_wisma_variable -  Transformation is about to allocate step [Set Variables] of type [SetVariable]
+2013/06/26 16:39:20 - Set Variables.0 - distribution activated
+2013/06/26 16:39:20 - Set Variables.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:20 - Set Variables.0 - Step info: nrinput=1 nroutput=0
+2013/06/26 16:39:20 - Set Variables.0 - Got previous step from [Set Variables] #0 --> Get rows from result
+2013/06/26 16:39:20 - Set Variables.0 - input rel is 1:1
+2013/06/26 16:39:20 - Set Variables.0 - Found input rowset [Get rows from result.0 - Set Variables.0]
+2013/06/26 16:39:20 - Set Variables.0 - Finished dispatching
+2013/06/26 16:39:20 - get_wisma_variable -  Transformation has allocated a new step: [Set Variables].0
+2013/06/26 16:39:20 - get_wisma_variable - This transformation can be replayed with replay date: 2013/06/26 16:39:20
+2013/06/26 16:39:20 - get_wisma_variable - Initialising 2 steps...
+2013/06/26 16:39:20 - Get rows from result.0 - Running on slave server #0/1.
+2013/06/26 16:39:20 - Set Variables.0 - Running on slave server #0/1.
+2013/06/26 16:39:20 - get_wisma_variable - Step [Get rows from result.0] initialized flawlessly.
+2013/06/26 16:39:20 - get_wisma_variable - Step [Set Variables.0] initialized flawlessly.
+2013/06/26 16:39:20 - get_wisma_variable - Transformation has allocated 2 threads and 1 rowsets.
+2013/06/26 16:39:20 - Get rows from result.0 - Starting to run...
+2013/06/26 16:39:20 - Set Variables.0 - Starting to run...
+2013/06/26 16:39:20 - Get rows from result.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/06/26 16:39:20 - Set Variables.0 - Setting environment variables...
+2013/06/26 16:39:20 - Set Variables.0 - Set variable SCHEMA_NAME to value [HO_20130625]
+2013/06/26 16:39:20 - Set Variables.0 - Set variable QUERY to value [Select 
+Left(b.NoAppID,5) as WismaCode,
+b.NoAppid as H_NoAppid, d.account_state_Id as H_account_state_id
+, a1.Due_date as H_LastDueDate_LoanTrxn
+, a1.Action_Date as H_LastPaymentDate
+,e.action_date as H_LastDueDate
+,f.action_date as H_NextDueDate
+,(g.orig_principal+g.orig_interest)-(g.principal_paid+g.interest_paid) as H_Tunggakan
+,case when f.action_date < current_date and f.payment_status='0'  and a1.installment_id=0 then 'BAD_DISBURSED'
+	when f.action_date < current_date and f.payment_status='0' then 'BAD' 	
+	else 'GOOD' end as H_Rank 
+,wb.NoAppid as W_NoAppid, wd.account_state_Id as W_account_state_id
+, wa1.Due_date as W_LastDueDate_LoanTrxn
+, wa1.Action_Date as W_LastPaymentDate
+,we.action_date as W_LastDueDate
+,wf.action_date as W_NextDueDate
+,(wg.orig_principal+wg.orig_interest)-(wg.principal_paid+wg.interest_paid) as W_Tunggakan
+,case when wf.action_date < current_date and wf.payment_status='0'  and wa1.installment_id=0 then 'BAD_DISBURSED'
+	when wf.action_date < current_date and wf.payment_status='0' then 'BAD' 	
+	else 'GOOD' end as W_Rank 
+-- ,a1.installment_id
+
+from ((prospera.account_trxn a1  left outer join prospera.account_trxn a2 on a1.account_id=a2.account_id 
+									and a1.account_trxn_id<a2.account_trxn_id)
+	inner join prospera.loan_account b on a1.account_id=b.account_id
+	inner join prospera.account d on b.account_id=d.account_id
+	left join prospera.loan_schedule e on e.account_id=a1.account_id and e.installment_id=a1.installment_id
+	left outer join prospera.loan_summary g on g.account_id=a1.account_id
+	left outer join prospera.loan_schedule f on f.account_id=a1.account_id and f.installment_id=a1.installment_id+1)
+	inner join 
+	((HO_20130625.account_trxn wa1  left outer join HO_20130625.account_trxn wa2 on wa1.account_id=wa2.account_id 
+									and wa1.account_trxn_id<wa2.account_trxn_id)
+	inner join HO_20130625.loan_account wb on wa1.account_id=wb.account_id
+	inner join HO_20130625.account wd on wb.account_id=wd.account_id
+	left join HO_20130625.loan_schedule we on we.account_id=wa1.account_id and we.installment_id=wa1.installment_id
+	left outer join HO_20130625.loan_summary wg on wg.account_id=wa1.account_id
+	left outer join HO_20130625.loan_schedule wf on wf.account_id=wa1.account_id and wf.installment_id=wa1.installment_id+1)
+on b.NoAppid=wb.NoAppid	
+Where a2.account_trxn_id is   null
+	and wa2.account_trxn_id is null
+and b.NoAppid in (
+'W00140000112','W00140000312','W00140000712','W00140000812','W00140016712','W00140028012','W00140028212','W00140041212','W00140041712','w00140046712','w00140046812','W00140047412','W00140047612','w00140047812','W00140052112','W00140052312','W00140052512','W00140052612','W00140053711','W00140056213','W00140060912','W00140061312','W00140061412','W00140064113','W00140068912','W00140069611','W00140070911','W00140074012','W00140074212','W00140094812','W00140095112','W00140097311','W00140097411','W00140097511','W00140097611','W00140097711','W00140097811','W00140097911','W00140098011','W00140098111','W00140098211','W00140098311','W00140098411','W00140098511','W00140098611','W00140098711','W00140098811','W00140098911','W00140099011','W00140099111','W00140099311','W00140099411','W00140099511','W00140099611','W00140108711','W00140108811','W00140108911','W00140109011','W00140109111','W00140109211','W00140109311','W00140109511','W00140109611','W00140109711','W00140109811','W00140109911','W00140110011','W00140110111','W00140110211','W00140110311','W00140110411','W00140110511','W00140110611','W00140110711','W00140110811','W00140110911','W00140111011','W00140111111','W00140124811','W00140131411','W00140132811','W00140133211','W00140135011','W00140135311','W00140135711','W00140136211','W00140136511','W00140153611','W00140154211','W02530010611','W02530010711','W02530010811','W02530010911','W02530011011','W02530011111','W02530011211','W02530011311','W02530011411','W02530011511','W02530011611','W02530011711','W02530011811','W02530011911','W02530012011','W02530015111','W02530015211','W02530015311','W02530015411','W02530015511','W02530015611','W02530015711','W02530015811','W02530015911','W02530016011','W02530016111','W02530016311','W02530016411','W02530016611','W02530016711','W02530016811','W02530016911','W02530017011','W02530017111','W02530017211','W02530017311','W02530017411','W02530017511','W02530017611','W02530017811','W02530017911','W02530018011','W02530018111','W02530018311','W02530018411','W02530018511','W02530018611','W02530018711','W02530018911','W02530019011','W02530019111','W02530019211','W02530019311','W02530019411','W02530019511','W02530021211','W02530021411','W02530021611','W02530021711','W02530021911','W02530022011','W02530022111','W02530022211','W02530022311','W02530022411','W02530022511','W02530022611','W02530023511','W02530023611','W02530023711','W02530023811','W02530023911','W02530024011','W02530024111','W02530024211','W02530024311','W02530024411','W02530024511','W02530024611','W02530024711','W02530024811','W02530024911','W02530025011','W02530025111','W02530025211','W02530025311','W02530025411','W02530025511','W02530025611','W02530025711','W02530025811','W02530025911','W02530026011','W02530026111','W02530026211','W02530026311','W02530026411','W02530026511','W02530026611','W02530026711','W02530026811','W02530026911','W02530027011','W02530027111','W02530027211','W02530027311','W02530027411','W02530027511','W02530027611','W02530027711','W02530027811','W02530027911','W02530028011','W02530028111','W02530028211','W02530028311','W02530028411','W02530029011','W02530029111','W02530029311','W02530029411','W02530029511','W02530029611','W02530029711','W02530029811','W02530029911','W02530030011','W02530030111','W02530030211','W02530030311','W02530030411','W02530030911','W02530031411','W02530032011','W02530032111','W02530032211','W02530032311','W02530032411','W02530032511','W02530032611','W02530032711','W02530032811','W02530032911','W02530033011','W02530033111','W02530033211','W02530033311','W02530033411','W02530033511','W02530033611','W02530033711','W02530033811','W02530033911','W02530036511','W02530036611','W02530036711','W02530036811','W02530036911','W02530037011','W02530037111','W02530037211','W02530037311','W02530037411','W02530037511','W02530037611','W02530037711','W02530039311','W02530039411','W02530039511','W02530039611','W02530039711','W02530039811','W02530039911','W02530040011','W02530040111','W02530040211','W02530040311','W02530040411','W02530040511','W02530040611','W02530040711','W02530041811','W02530046611','W02530046711','W02530046811','W02530046911','W02530047011','W02530047111','W02530047211','W02530047311','W02530047411','W02530047511','W02530047611','W02530047711','W02530047811','W02530047911','W02530048011','W02530048111','W02530048211','W02530048311','W02530048411','W02530048511','W02530048611','W02530048711','W02530048811','W02530048911','W02530049011','W02530049111','W02530049211','W02530049311','W02530049411','W02530049511','W02530049611','W02530049711','W02530049811','W02530049911','W02530050011'
+)]
+2013/06/26 16:39:20 - Set Variables.0 - Finished after 1 rows.
+2013/06/26 16:39:20 - Set Variables.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2013/06/26 16:39:20 - Job wisma looping - Starting entry [Simple evaluation]
+2013/06/26 16:39:20 - Job wisma looping - exec(11, 0, Simple evaluation.0)
+2013/06/26 16:39:20 - Simple evaluation - Starting job entry
+2013/06/26 16:39:20 - Simple evaluation - Value to evaluate is CSV
+2013/06/26 16:39:20 - Job wisma looping - Starting entry [Simple evaluation 2]
+2013/06/26 16:39:20 - Job wisma looping - exec(12, 0, Simple evaluation 2.0)
+2013/06/26 16:39:20 - Simple evaluation - Starting job entry
+2013/06/26 16:39:20 - Simple evaluation - Value to evaluate is CSV
+2013/06/26 16:39:20 - Job wisma looping - Starting entry [Simple evaluation 3 2 2]
+2013/06/26 16:39:20 - Job wisma looping - exec(13, 0, Simple evaluation 3 2 2.0)
+2013/06/26 16:39:20 - Simple evaluation - Starting job entry
+2013/06/26 16:39:20 - Simple evaluation - Value to evaluate is Y
+2013/06/26 16:39:20 - Job wisma looping - Starting entry [To Csv append]
+2013/06/26 16:39:20 - Job wisma looping - exec(14, 0, To Csv append.0)
+2013/06/26 16:39:20 - To Csv append - Starting job entry
+2013/06/26 16:39:20 - To Csv append - Opening transformation: [file:///C:/12023227/Workspace BI/RTW_Pentaho/to_csv_append.ktr]
+2013/06/26 16:39:20 - To Csv append - Loading transformation from XML file [file:///C:/12023227/Workspace BI/RTW_Pentaho/to_csv_append.ktr]
+2013/06/26 16:39:20 - To Csv append - Starting transformation...(file=${Internal.Job.Filename.Directory}/to_csv_append.ktr, name=To Csv append, repinfo=null)
+2013/06/26 16:39:20 - to_csv_append - Transformation is pre-loaded.
+2013/06/26 16:39:20 - to_csv_append - Dispatching started for transformation [to_csv_append]
+2013/06/26 16:39:20 - to_csv_append - Nr of arguments detected:0 
+2013/06/26 16:39:20 - to_csv_append - This is not a replay transformation
+2013/06/26 16:39:20 - to_csv_append - I found 2 different steps to launch.
+2013/06/26 16:39:20 - to_csv_append - Allocating rowsets...
+2013/06/26 16:39:20 - to_csv_append -  Allocating rowsets for step 0 --> Table input
+2013/06/26 16:39:20 - to_csv_append -   prevcopies = 1, nextcopies=1
+2013/06/26 16:39:20 - to_csv_append - Transformation allocated new rowset [Table input.0 - Text file output.0]
+2013/06/26 16:39:20 - to_csv_append -  Allocated 1 rowsets for step 0 --> Table input  
+2013/06/26 16:39:20 - to_csv_append -  Allocating rowsets for step 1 --> Text file output
+2013/06/26 16:39:20 - to_csv_append -  Allocated 1 rowsets for step 1 --> Text file output  
+2013/06/26 16:39:20 - to_csv_append - Allocating Steps & StepData...
+2013/06/26 16:39:20 - to_csv_append -  Transformation is about to allocate step [Table input] of type [TableInput]
+2013/06/26 16:39:20 - Table input.0 - distribution activated
+2013/06/26 16:39:20 - Table input.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:20 - Table input.0 - Step info: nrinput=0 nroutput=1
+2013/06/26 16:39:20 - Table input.0 - output rel. is  1:1
+2013/06/26 16:39:20 - Table input.0 - Found output rowset [Table input.0 - Text file output.0]
+2013/06/26 16:39:20 - Table input.0 - Finished dispatching
+2013/06/26 16:39:20 - to_csv_append -  Transformation has allocated a new step: [Table input].0
+2013/06/26 16:39:20 - to_csv_append -  Transformation is about to allocate step [Text file output] of type [TextFileOutput]
+2013/06/26 16:39:20 - Text file output.0 - distribution activated
+2013/06/26 16:39:20 - Text file output.0 - Starting allocation of buffers & new threads...
+2013/06/26 16:39:20 - Text file output.0 - Step info: nrinput=1 nroutput=0
+2013/06/26 16:39:20 - Text file output.0 - Got previous step from [Text file output] #0 --> Table input
+2013/06/26 16:39:20 - Text file output.0 - input rel is 1:1
+2013/06/26 16:39:20 - Text file output.0 - Found input rowset [Table input.0 - Text file output.0]
+2013/06/26 16:39:20 - Text file output.0 - Finished dispatching
+2013/06/26 16:39:20 - to_csv_append -  Transformation has allocated a new step: [Text file output].0
+2013/06/26 16:39:20 - to_csv_append - This transformation can be replayed with replay date: 2013/06/26 16:39:20
+2013/06/26 16:39:20 - to_csv_append - Initialising 2 steps...
+2013/06/26 16:39:20 - Table input.0 - Running on slave server #0/1.
+2013/06/26 16:39:20 - TAMAN.WISMA - New database connection defined
+2013/06/26 16:39:20 - Text file output.0 - Running on slave server #0/1.
+2013/06/26 16:39:20 - Text file output.0 - Parent folder exists [file:///C:/12023227/Workspace/RTW/output]!
+2013/06/26 16:39:20 - Text file output.0 - Opening output stream in nocompress mode
+2013/06/26 16:39:20 - Text file output.0 - Opening output stream in default encoding
+2013/06/26 16:39:20 - Text file output.0 - Opened new file with name [C:\12023227\Workspace\RTW\output/20130626_test.csv]
+2013/06/26 16:39:20 - TAMAN.WISMA - Connected to database.
+2013/06/26 16:39:20 - TAMAN.WISMA - Auto commit off
+2013/06/26 16:39:20 - Table input.0 - Connected to database...
+2013/06/26 16:39:20 - to_csv_append - Step [Table input.0] initialized flawlessly.
+2013/06/26 16:39:20 - to_csv_append - Step [Text file output.0] initialized flawlessly.
+2013/06/26 16:39:20 - to_csv_append - Transformation has allocated 2 threads and 1 rowsets.
+2013/06/26 16:39:20 - Table input.0 - Starting to run...
+2013/06/26 16:39:20 - Table input.0 - SQL query : Select 
+Left(b.NoAppID,5) as WismaCode,
+b.NoAppid as H_NoAppid, d.account_state_Id as H_account_state_id
+, a1.Due_date as H_LastDueDate_LoanTrxn
+, a1.Action_Date as H_LastPaymentDate
+,e.action_date as H_LastDueDate
+,f.action_date as H_NextDueDate
+,(g.orig_principal+g.orig_interest)-(g.principal_paid+g.interest_paid) as H_Tunggakan
+,case when f.action_date < current_date and f.payment_status='0'  and a1.installment_id=0 then 'BAD_DISBURSED'
+	when f.action_date < current_date and f.payment_status='0' then 'BAD' 	
+	else 'GOOD' end as H_Rank 
+,wb.NoAppid as W_NoAppid, wd.account_state_Id as W_account_state_id
+, wa1.Due_date as W_LastDueDate_LoanTrxn
+, wa1.Action_Date as W_LastPaymentDate
+,we.action_date as W_LastDueDate
+,wf.action_date as W_NextDueDate
+,(wg.orig_principal+wg.orig_interest)-(wg.principal_paid+wg.interest_paid) as W_Tunggakan
+,case when wf.action_date < current_date and wf.payment_status='0'  and wa1.installment_id=0 then 'BAD_DISBURSED'
+	when wf.action_date < current_date and wf.payment_status='0' then 'BAD' 	
+	else 'GOOD' end as W_Rank 
+-- ,a1.installment_id
+
+from ((prospera.account_trxn a1  left outer join prospera.account_trxn a2 on a1.account_id=a2.account_id 
+									and a1.account_trxn_id<a2.account_trxn_id)
+	inner join prospera.loan_account b on a1.account_id=b.account_id
+	inner join prospera.account d on b.account_id=d.account_id
+	left join prospera.loan_schedule e on e.account_id=a1.account_id and e.installment_id=a1.installment_id
+	left outer join prospera.loan_summary g on g.account_id=a1.account_id
+	left outer join prospera.loan_schedule f on f.account_id=a1.account_id and f.installment_id=a1.installment_id+1)
+	inner join 
+	((HO_20130625.account_trxn wa1  left outer join HO_20130625.account_trxn wa2 on wa1.account_id=wa2.account_id 
+									and wa1.account_trxn_id<wa2.account_trxn_id)
+	inner join HO_20130625.loan_account wb on wa1.account_id=wb.account_id
+	inner join HO_20130625.account wd on wb.account_id=wd.account_id
+	left join HO_20130625.loan_schedule we on we.account_id=wa1.account_id and we.installment_id=wa1.installment_id
+	left outer join HO_20130625.loan_summary wg on wg.account_id=wa1.account_id
+	left outer join HO_20130625.loan_schedule wf on wf.account_id=wa1.account_id and wf.installment_id=wa1.installment_id+1)
+on b.NoAppid=wb.NoAppid	
+Where a2.account_trxn_id is   null
+	and wa2.account_trxn_id is null
+and b.NoAppid in (
+'W00140000112','W00140000312','W00140000712','W00140000812','W00140016712','W00140028012','W00140028212','W00140041212','W00140041712','w00140046712','w00140046812','W00140047412','W00140047612','w00140047812','W00140052112','W00140052312','W00140052512','W00140052612','W00140053711','W00140056213','W00140060912','W00140061312','W00140061412','W00140064113','W00140068912','W00140069611','W00140070911','W00140074012','W00140074212','W00140094812','W00140095112','W00140097311','W00140097411','W00140097511','W00140097611','W00140097711','W00140097811','W00140097911','W00140098011','W00140098111','W00140098211','W00140098311','W00140098411','W00140098511','W00140098611','W00140098711','W00140098811','W00140098911','W00140099011','W00140099111','W00140099311','W00140099411','W00140099511','W00140099611','W00140108711','W00140108811','W00140108911','W00140109011','W00140109111','W00140109211','W00140109311','W00140109511','W00140109611','W00140109711','W00140109811','W00140109911','W00140110011','W00140110111','W00140110211','W00140110311','W00140110411','W00140110511','W00140110611','W00140110711','W00140110811','W00140110911','W00140111011','W00140111111','W00140124811','W00140131411','W00140132811','W00140133211','W00140135011','W00140135311','W00140135711','W00140136211','W00140136511','W00140153611','W00140154211','W02530010611','W02530010711','W02530010811','W02530010911','W02530011011','W02530011111','W02530011211','W02530011311','W02530011411','W02530011511','W02530011611','W02530011711','W02530011811','W02530011911','W02530012011','W02530015111','W02530015211','W02530015311','W02530015411','W02530015511','W02530015611','W02530015711','W02530015811','W02530015911','W02530016011','W02530016111','W02530016311','W02530016411','W02530016611','W02530016711','W02530016811','W02530016911','W02530017011','W02530017111','W02530017211','W02530017311','W02530017411','W02530017511','W02530017611','W02530017811','W02530017911','W02530018011','W02530018111','W02530018311','W02530018411','W02530018511','W02530018611','W02530018711','W02530018911','W02530019011','W02530019111','W02530019211','W02530019311','W02530019411','W02530019511','W02530021211','W02530021411','W02530021611','W02530021711','W02530021911','W02530022011','W02530022111','W02530022211','W02530022311','W02530022411','W02530022511','W02530022611','W02530023511','W02530023611','W02530023711','W02530023811','W02530023911','W02530024011','W02530024111','W02530024211','W02530024311','W02530024411','W02530024511','W02530024611','W02530024711','W02530024811','W02530024911','W02530025011','W02530025111','W02530025211','W02530025311','W02530025411','W02530025511','W02530025611','W02530025711','W02530025811','W02530025911','W02530026011','W02530026111','W02530026211','W02530026311','W02530026411','W02530026511','W02530026611','W02530026711','W02530026811','W02530026911','W02530027011','W02530027111','W02530027211','W02530027311','W02530027411','W02530027511','W02530027611','W02530027711','W02530027811','W02530027911','W02530028011','W02530028111','W02530028211','W02530028311','W02530028411','W02530029011','W02530029111','W02530029311','W02530029411','W02530029511','W02530029611','W02530029711','W02530029811','W02530029911','W02530030011','W02530030111','W02530030211','W02530030311','W02530030411','W02530030911','W02530031411','W02530032011','W02530032111','W02530032211','W02530032311','W02530032411','W02530032511','W02530032611','W02530032711','W02530032811','W02530032911','W02530033011','W02530033111','W02530033211','W02530033311','W02530033411','W02530033511','W02530033611','W02530033711','W02530033811','W02530033911','W02530036511','W02530036611','W02530036711','W02530036811','W02530036911','W02530037011','W02530037111','W02530037211','W02530037311','W02530037411','W02530037511','W02530037611','W02530037711','W02530039311','W02530039411','W02530039511','W02530039611','W02530039711','W02530039811','W02530039911','W02530040011','W02530040111','W02530040211','W02530040311','W02530040411','W02530040511','W02530040611','W02530040711','W02530041811','W02530046611','W02530046711','W02530046811','W02530046911','W02530047011','W02530047111','W02530047211','W02530047311','W02530047411','W02530047511','W02530047611','W02530047711','W02530047811','W02530047911','W02530048011','W02530048111','W02530048211','W02530048311','W02530048411','W02530048511','W02530048611','W02530048711','W02530048811','W02530048911','W02530049011','W02530049111','W02530049211','W02530049311','W02530049411','W02530049511','W02530049611','W02530049711','W02530049811','W02530049911','W02530050011'
+)
+2013/06/26 16:39:20 - Text file output.0 - Starting to run...
+2013/06/26 16:39:20 - Table input.0 - Finished reading query, closing connection.
+2013/06/26 16:39:20 - TAMAN.WISMA - Connection to database closed!
+2013/06/26 16:39:20 - Table input.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2013/06/26 16:39:20 - Text file output.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2013/06/26 16:39:20 - Job wisma looping - Starting entry [Success]
+2013/06/26 16:39:20 - Job wisma looping - exec(15, 0, Success.0)
+2013/06/26 16:39:20 - Success - Starting job entry
+2013/06/26 16:39:20 - Job wisma looping - Finished job entry [Success] (result=[true])
+2013/06/26 16:39:20 - Job wisma looping - Finished job entry [To Csv append] (result=[true])
+2013/06/26 16:39:20 - Job wisma looping - Finished job entry [Simple evaluation 3 2 2] (result=[true])
+2013/06/26 16:39:20 - Job wisma looping - Finished job entry [Simple evaluation 2] (result=[true])
+2013/06/26 16:39:20 - Job wisma looping - Finished job entry [Simple evaluation] (result=[true])

@@ -1,0 +1,1 @@
+isi folder ini dengan program kettle atau pdi minimal versi 4.2 RC1
